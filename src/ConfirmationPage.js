@@ -18,7 +18,7 @@ const ConfirmationPage = () => {
 
     useEffect(() => {
         // Hide the input status message after 3 seconds
-        if (inputStatus === 'Text saved successfully!') {
+        if (inputStatus === 'saved successfully!') {
             const timer = setTimeout(() => {
                 setInputStatus('');
             }, 3000); // 3000 milliseconds = 3 seconds
@@ -102,7 +102,7 @@ const ConfirmationPage = () => {
         try {
             const fileRef = ref(storage, `samples/${userInput}.txt`);
             await uploadBytes(fileRef, new Blob([userInput], { type: 'text/plain' }));
-            setInputStatus('Text saved successfully!');
+            setInputStatus('saved successfully!');
             fetchFileList();
         } catch (error) {
             console.error('Error saving text:', error);
@@ -146,7 +146,7 @@ const ConfirmationPage = () => {
                         placeholder="Enter your text here"
                     />
                     <br />
-                    <button onClick={handleSaveText}>Save Text</button>
+                    <button onClick={handleSaveText}>Save</button>
                     <p>{inputStatus}</p>
                 </div>
             </div>
