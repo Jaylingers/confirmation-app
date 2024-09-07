@@ -1,6 +1,6 @@
 // src/firebaseConfig.js
 import { initializeApp } from 'firebase/app';
-import { getStorage, ref, uploadBytes, listAll, getMetadata } from 'firebase/storage'; // Import getMetadata
+import { getStorage, ref, uploadBytes, listAll, getMetadata, deleteObject } from 'firebase/storage'; // Import getMetadata
 import { getFirestore, doc, getDoc, setDoc, updateDoc, runTransaction } from 'firebase/firestore';
 
 const firebaseConfig = {
@@ -19,4 +19,4 @@ const app = initializeApp(firebaseConfig);
 const storage = getStorage(app);
 const firestore = getFirestore(app);
 
-export { storage, firestore, ref, uploadBytes, listAll, getMetadata, doc, getDoc, setDoc, updateDoc, runTransaction };
+export { storage, firestore, ref, uploadBytes, listAll, getMetadata, doc, getDoc, setDoc, updateDoc, runTransaction, deleteObject };

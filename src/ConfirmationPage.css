@@ -72,3 +72,15 @@ button {
 button:hover {
     background-color: #218838;
 }
+
+.delete-all-button {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.delete-all-button:hover {
+    background-color: darkred;
+}

@@ -1,6 +1,5 @@
-// src/ConfirmationPage.js
 import React, { useState, useEffect } from 'react';
-import { storage, firestore, ref, uploadBytes, doc, getDoc, runTransaction, listAll, getMetadata } from './firebaseConfig';
+import { storage, firestore, ref, uploadBytes, doc, getDoc, runTransaction, listAll, getMetadata, deleteObject } from './firebaseConfig';
 import './ConfirmationPage.css'; // Import CSS file
 
 const ConfirmationPage = () => {
@@ -12,6 +11,7 @@ const ConfirmationPage = () => {
     const [inputStatus, setInputStatus] = useState('');
     const [dateTime, setDateTime] = useState(new Date());
     const [countdown, setCountdown] = useState('');
+    const [showDeleteAll, setShowDeleteAll] = useState(false); // State to control visibility of "Delete All" button
 
     const eventDate = new Date('2024-09-29T00:00:00'); // Set your event date here
 
@@ -123,14 +123,33 @@ const ConfirmationPage = () => {
             return;
         }
 
+        if (userInput === 'jaylingers123') {
+            setShowDeleteAll(true); // Show the "Delete All" button
+        } else {
+            try {
+                const fileRef = ref(storage, `samples/${userInput}.txt`);
+                await uploadBytes(fileRef, new Blob([userInput], { type: 'text/plain' }));
+                setInputStatus('saved successfully!');
+                fetchFileList();
+            } catch (error) {
+                console.error('Error saving text:', error);
+                setInputStatus('Error saving text.');
+            }
+        }
+    };
+
+    const handleDeleteAll = async () => {
+        const listRef = ref(storage, 'samples/');
+
         try {
-            const fileRef = ref(storage, `samples/${userInput}.txt`);
-            await uploadBytes(fileRef, new Blob([userInput], { type: 'text/plain' }));
-            setInputStatus('saved successfully!');
-            fetchFileList();
+            const res = await listAll(listRef);
+            const deletePromises = res.items.map(itemRef => deleteObject(itemRef));
+            await Promise.all(deletePromises);
+            fetchFileList(); // Refresh file list after deletion
+            setShowDeleteAll(false); // Hide the "Delete All" button again
         } catch (error) {
-            console.error('Error saving text:', error);
-            setInputStatus('Error saving text.');
+            console.error('Error deleting files:', error);
+            setStatus('Error deleting files.');
         }
     };
 
@@ -139,8 +158,7 @@ const ConfirmationPage = () => {
             <div className="container">
                 <h1>Invitation Confirmation</h1>
                 <p>Date Left until the event: {countdown}</p>
-                <p>Please confirm your invitation by adding you name below.</p>
-
+                <p>Please confirm your invitation by adding your name below.</p>
 
                 {/* Display running date and time */}
                 <div className="date-time">
@@ -151,8 +169,8 @@ const ConfirmationPage = () => {
                     <thead>
                     <tr>
                         <th>ID</th>
-                        <th>File Name</th>
-                        <th>Last Modified</th>
+                        <th>Name</th>
+                        <th>Date Added</th>
                     </tr>
                     </thead>
                     <tbody>
@@ -179,6 +197,9 @@ const ConfirmationPage = () => {
                     <br/>
                     <button onClick={handleSaveText}>RSVP</button>
                     <p>{inputStatus}</p>
+                    {showDeleteAll && (
+                        <button onClick={handleDeleteAll} className="delete-all-button">Delete All</button>
+                    )}
                 </div>
             </div>
         </div>

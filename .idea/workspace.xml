@@ -6,7 +6,9 @@
   <component name="ChangeListManager">
     <list default="true" id="901f16b0-dfb0-4498-977c-7fc19d6318a2" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ConfirmationPage.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/ConfirmationPage.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ConfirmationPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/ConfirmationPage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/firebaseConfig.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/firebaseConfig.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,22 +29,22 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "main",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/JAYLINGERS/Documents/GitHub/invitation/confirmation-app",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "ts.external.directory.path": "C:\\Program Files\\JetBrains\\IntelliJ IDEA 2024.2\\plugins\\javascript-plugin\\jsLanguageServicesImpl\\external",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/JAYLINGERS/Documents/GitHub/invitation/confirmation-app&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;C:\\Program Files\\JetBrains\\IntelliJ IDEA 2024.2\\plugins\\javascript-plugin\\jsLanguageServicesImpl\\external&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -62,7 +64,8 @@
       <workItem from="1725685915484" duration="305000" />
       <workItem from="1725686855262" duration="2501000" />
       <workItem from="1725693398647" duration="174000" />
-      <workItem from="1725694047010" duration="3859000" />
+      <workItem from="1725694047010" duration="4001000" />
+      <workItem from="1725747954996" duration="1438000" />
     </task>
     <servers />
   </component>
