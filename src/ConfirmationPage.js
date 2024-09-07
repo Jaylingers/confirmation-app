@@ -10,10 +10,24 @@ const ConfirmationPage = () => {
     const [fileList, setFileList] = useState([]);
     const [userInput, setUserInput] = useState('');
     const [inputStatus, setInputStatus] = useState('');
+    const [dateTime, setDateTime] = useState(new Date());
+    const [countdown, setCountdown] = useState('');
+
+    const eventDate = new Date('2024-09-29T00:00:00'); // Set your event date here
 
     useEffect(() => {
         fetchConfirmationCount();
         fetchFileList();
+
+        // Update dateTime and countdown every second
+        const timer = setInterval(() => {
+            const now = new Date();
+            setDateTime(now);
+            updateCountdown(now);
+        }, 1000);
+
+        // Cleanup interval on component unmount
+        return () => clearInterval(timer);
     }, []);
 
     useEffect(() => {
@@ -27,6 +41,16 @@ const ConfirmationPage = () => {
             return () => clearTimeout(timer);
         }
     }, [inputStatus]);
+
+    const updateCountdown = (now) => {
+        const timeDiff = eventDate - now;
+        const days = Math.floor(timeDiff / (1000 * 60 * 60 * 24));
+        const hours = Math.floor((timeDiff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        const minutes = Math.floor((timeDiff % (1000 * 60 * 60)) / (1000 * 60));
+        const seconds = Math.floor((timeDiff % (1000 * 60)) / 1000);
+
+        setCountdown(`${days} days ${hours} hours ${minutes} minutes ${seconds} seconds`);
+    };
 
     const updateConfirmationCount = async () => {
         const countRef = doc(firestore, 'sample', 'count');
@@ -114,9 +138,15 @@ const ConfirmationPage = () => {
         <div className="confirmation-page">
             <div className="container">
                 <h1>Invitation Confirmation</h1>
-                <p>Please confirm your invitation by clicking the button below.</p>
-                <p>Number of confirmations: {fileCount}</p>
+                <p>Date Left until the event: {countdown}</p>
+                <p>Please confirm your invitation by adding you name below.</p>
 
+
+                {/* Display running date and time */}
+                <div className="date-time">
+                    <p>{dateTime.toLocaleString()}</p>
+                </div>
+                <h1>List Of Confirmed</h1>
                 <table className="file-table">
                     <thead>
                     <tr>
@@ -134,6 +164,7 @@ const ConfirmationPage = () => {
                         </tr>
                     ))}
                     </tbody>
+                    <p>Total: {fileCount}</p>
                 </table>
 
                 <div className="input-section">
@@ -145,8 +176,8 @@ const ConfirmationPage = () => {
                         onChange={handleInputChange}
                         placeholder="Enter your text here"
                     />
-                    <br />
-                    <button onClick={handleSaveText}>Save</button>
+                    <br/>
+                    <button onClick={handleSaveText}>RSVP</button>
                     <p>{inputStatus}</p>
                 </div>
             </div>
