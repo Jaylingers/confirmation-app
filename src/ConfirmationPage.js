@@ -401,9 +401,8 @@ const ConfirmationPage = () => {
 								<span className="icon">
 									<i className="icon-users"></i>
 								</span>
-
-                                            <span className="counter" data-from="0" data-to={fileCount.toString()}
-                                                  data-speed="5000" data-refresh-interval="50">{fileCount}</span>
+                                            <span className="counter js-counter" data-from="0" data-to={fileCount}
+                                                  data-speed="10000" data-refresh-interval="50"></span>
                                             <span className="counter-label">Guest</span>
 
                                         </div>
@@ -414,8 +413,8 @@ const ConfirmationPage = () => {
 									<i className="icon-user"></i>
 								</span>
 
-                                            <span className="counter js-counter" data-from="0" data-to="1000"
-                                                  data-speed="5000" data-refresh-interval="50">1</span>
+                                            <span className="counter js-counter" data-from="0" data-to="0"
+                                                  data-speed="10000" data-refresh-interval="50">1</span>
                                             <span className="counter-label">We Catter</span>
                                         </div>
                                     </div>
@@ -424,8 +423,8 @@ const ConfirmationPage = () => {
 								<span className="icon">
 									<i className="icon-calendar"></i>
 								</span>
-                                            <span className="counter js-counter" data-from="0" data-to="402"
-                                                  data-speed="5000" data-refresh-interval="50">1</span>
+                                            <span className="counter js-counter" data-from="0" data-to="0"
+                                                  data-speed="10000" data-refresh-interval="50">1</span>
                                             <span className="counter-label">Events Done</span>
                                         </div>
                                     </div>
@@ -435,8 +434,8 @@ const ConfirmationPage = () => {
 									<i className="icon-clock"></i>
 								</span>
 
-                                            <span className="counter js-counter" data-from="0" data-to="2345"
-                                                  data-speed="5000" data-refresh-interval="50">1</span>
+                                            <span className="counter js-counter" data-from="0" data-to="0"
+                                                  data-speed="10000" data-refresh-interval="50">1</span>
                                             <span className="counter-label">Hours Spent</span>
 
                                         </div>
