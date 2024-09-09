@@ -186,7 +186,7 @@ const ConfirmationPage = () => {
                         Tomaquin Baptism</h1>
                 </div>
                 <div style={{display: 'flex', justifyContent: 'center', alignItems: 'center'}}>
-                    <h4>You are envited!</h4>
+                    <h4>You are envited</h4>
                 </div>
                 <div style={{display: 'flex', justifyContent: 'center', alignItems: 'center'}}>
                     <h1 className={'circle'}>
