@@ -204,7 +204,7 @@ button:hover {
 
 .name {
     height: 50px;
-    font-size: calc(1,7 + 2vw); /* Example: Adjusts the font size relative to viewport width */
+    font-size: calc(1.7em + 2vw); /* Example: Adjusts the font size relative to viewport width */
     font-family: "Sacramento", Arial, serif;
 }
 
