@@ -239,7 +239,7 @@
             counter();
             counterWayPoint();
             countdown();
-        })
+        },1000)
     });
 
 
