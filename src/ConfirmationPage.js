@@ -166,7 +166,13 @@ const ConfirmationPage = () => {
                 </nav>
 
                 <header id="fh5co-header" className="fh5co-cover" role="banner"
-                        style={{backgroundImage: 'url(images/img_bg_2.jpg)'}} data-stellar-background-ratio="0.5">
+                        style={{
+                            // backgroundImage: 'url(images/img_bg_2.jpg)',
+                            // backgroundColor:'antiquewhite'
+                            backgroundColor:'#ebd2af'
+                }}
+
+                        data-stellar-background-ratio="0.5">
                     <div className="overlay"></div>
                     <div className="container">
                         <div className="row">

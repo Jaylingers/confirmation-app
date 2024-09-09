@@ -6,6 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="901f16b0-dfb0-4498-977c-7fc19d6318a2" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ConfirmationPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/ConfirmationPage.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -78,6 +79,7 @@
       <workItem from="1725747954996" duration="1438000" />
       <workItem from="1725759445384" duration="2988000" />
       <workItem from="1725842764074" duration="13008000" />
+      <workItem from="1725864641195" duration="576000" />
     </task>
     <servers />
   </component>
@@ -89,7 +91,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/src/ConfirmationPage.js</url>
-          <line>533</line>
+          <line>539</line>
           <option name="timeStamp" value="2" />
         </line-breakpoint>
       </breakpoints>
