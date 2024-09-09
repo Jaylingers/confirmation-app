@@ -258,7 +258,7 @@ const ConfirmationPage = () => {
                                         </div>
                                         <div className="col-md-6 col-sm-6 text-center">
                                             <div className="event-wrap animate-box">
-                                                <h3>Wedding Party</h3>
+                                                <h3>Baptism Party</h3>
                                                 <div className="event-col">
                                                     <i className="icon-clock"></i>
                                                     <span>7:00 PM</span>
