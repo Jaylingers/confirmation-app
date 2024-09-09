@@ -89,6 +89,7 @@ const ConfirmationPage = () => {
     const handleSaveText = async () => {
         if (!userInput.trim()) {
             setInputStatus('Please enter some text.');
+            setShowModal(true);
             return;
         }
 
@@ -586,7 +587,6 @@ const ConfirmationPage = () => {
                                 </div>
                                 <div className="row ">
                                     <div className="col-md-10 col-md-offset-1">
-                                        <form className="">
                                             <div>
                                                 {inputStatus}
                                                 <div className="form-group">
@@ -607,7 +607,6 @@ const ConfirmationPage = () => {
                                                     <button onClick={handleDeleteAll} className="delete-all-button">Delete All</button>
                                                 )}
                                             </div>
-                                        </form>
                                     </div>
                                 </div>
                             </div>
