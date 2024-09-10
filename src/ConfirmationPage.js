@@ -137,27 +137,12 @@ const ConfirmationPage = () => {
                             </div>
                             <div className="col-xs-10 text-right menu-1">
                                 <ul>
-                                    <li className="active"><a href="index.html">Home</a></li>
-                                    <li><a href="about.html">Story</a></li>
-                                    <li className="has-dropdown">
-                                        <a href="services.html">Services</a>
-                                        <ul className="dropdown">
-                                            <li><a href="#">Web Design</a></li>
-                                            <li><a href="#">eCommerce</a></li>
-                                            <li><a href="#">Branding</a></li>
-                                            <li><a href="#">API</a></li>
-                                        </ul>
-                                    </li>
-                                    <li className="has-dropdown">
-                                        <a href="gallery.html">Gallery</a>
-                                        <ul className="dropdown">
-                                            <li><a href="#">HTML5</a></li>
-                                            <li><a href="#">CSS3</a></li>
-                                            <li><a href="#">Sass</a></li>
-                                            <li><a href="#">jQuery</a></li>
-                                        </ul>
-                                    </li>
-                                    <li><a href="contact.html">Contact</a></li>
+                                    <li className={'home active'}><a href="#">Home</a></li>
+                                    <li className={'when'}><a href="#">When</a></li>
+                                    <li className={'events'}><a href="#">Events</a></li>
+                                    <li className={'gallery'}><a href="#">Gallery</a></li>
+                                    <li className={'guest'}><a href="#">Guest</a></li>
+                                    <li className={'wishes'}><a href="#">Wishes</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -169,11 +154,11 @@ const ConfirmationPage = () => {
                         style={{
                             // backgroundImage: 'url(images/img_bg_2.jpg)',
                             // backgroundColor:'antiquewhite'
-                            backgroundColor:'#ebd2af'
-                }}
+                            backgroundColor: '#ebd2af'
+                        }}
 
                         data-stellar-background-ratio="0.5">
-                    <div className="overlay"></div>
+                    <div className="overlay" id={'home'}></div>
                     <div className="container">
                         <div className="row">
                             <div className="col-md-8 col-md-offset-2 text-center">
@@ -197,7 +182,7 @@ const ConfirmationPage = () => {
                     <div className="container">
                         <div className="row">
                             <div className="col-md-8 col-md-offset-2 text-center fh5co-heading animate-box">
-                                <h2>Hello!</h2>
+                                <h2 id={'when'}>Hello!</h2>
                                 <h3>September 29, 2024</h3>
                                 <p>We invited you to celebrate our child baptism</p>
                             </div>
@@ -235,7 +220,7 @@ const ConfirmationPage = () => {
                     <div className="container">
                         <div className="row">
                             <div className="col-md-8 col-md-offset-2 text-center fh5co-heading animate-box">
-                                <span>Our Special Events</span>
+                                <span id={'events'}>Our Special Events</span>
                                 <h2>Baptism Events</h2>
                             </div>
                         </div>
@@ -294,7 +279,7 @@ const ConfirmationPage = () => {
                         <div className="row">
                             <div className="col-md-8 col-md-offset-2 text-center fh5co-heading animate-box">
                                 <span>Our Memories</span>
-                                <h2>Baptism Gallery</h2>
+                                <h2 id={'gallery'}>Baptism Gallery</h2>
                                 <p>Far far away, behind the word mountains, far from the countries Vokalia and
                                     Consonantia, there live the blind texts.</p>
                             </div>
@@ -397,7 +382,7 @@ const ConfirmationPage = () => {
 
                 <div id="fh5co-counter" className="fh5co-bg fh5co-counter"
                      style={{backgroundImage: "url(images/couple-1.jpg)"}}>
-                    <div className="overlay"></div>
+                    <div className="overlay" id={'guest'}></div>
                     <div className="container">
                         <div className="row">
                             <div className="display-t">
@@ -458,7 +443,7 @@ const ConfirmationPage = () => {
                             <div className="row animate-box">
                                 <div className="col-md-8 col-md-offset-2 text-center fh5co-heading">
                                     <span>Best Wishes</span>
-                                    <h2>Friends Wishes</h2>
+                                    <h2 id={'wishes'}>Friends Wishes</h2>
                                 </div>
                             </div>
                             <div className="row">
@@ -544,44 +529,6 @@ const ConfirmationPage = () => {
             <div className="confirmation-page">
                 <Modal showModal={showModal} handleClose={() => setShowModal(false)}>
                     <div className="modal-inner-content">
-                        {/*<p>Please confirm your invitation by adding your name below.</p>*/}
-                        {/*<table className="file-table">*/}
-                        {/*    <thead>*/}
-                        {/*    <tr>*/}
-                        {/*        <th>ID</th>*/}
-                        {/*        <th>Name</th>*/}
-                        {/*        <th>Date Added</th>*/}
-                        {/*    </tr>*/}
-                        {/*    </thead>*/}
-                        {/*    <tbody>*/}
-                        {/*    {fileList.map((file, index) => (*/}
-                        {/*        <tr key={index}>*/}
-                        {/*            <td>{index + 1}</td>*/}
-                        {/*            <td>{file.name.replace('.txt', '')}</td>*/}
-                        {/*            <td>{file.lastModified ? file.lastModified.toLocaleString() : 'N/A'}</td>*/}
-                        {/*        </tr>*/}
-                        {/*    ))}*/}
-                        {/*    </tbody>*/}
-                        {/*    <p>Confirmed: {fileCount}</p>*/}
-                        {/*</table>*/}
-
-                        {/*<div className="input-section">*/}
-                        {/*    <h2>Enter Your Name!</h2>*/}
-                        {/*    <textarea*/}
-                        {/*        rows="4"*/}
-                        {/*        cols="50"*/}
-                        {/*        value={userInput}*/}
-                        {/*        onChange={handleInputChange}*/}
-                        {/*        placeholder="Enter your text here"*/}
-                        {/*    />*/}
-                        {/*    <br/>*/}
-                        {/*    <button onClick={handleSaveText}>RSVP</button>*/}
-                        {/*    <p>{inputStatus}</p>*/}
-                        {/*    {showDeleteAll && (*/}
-                        {/*        <button onClick={handleDeleteAll} className="delete-all-button">Delete All</button>*/}
-                        {/*    )}*/}
-                        {/*</div>*/}
-
                         <div id="fh5co-started">
                             <div style={{color: 'black !important'}}>
                                 <div className="row">
@@ -592,26 +539,27 @@ const ConfirmationPage = () => {
                                 </div>
                                 <div className="row ">
                                     <div className="col-md-10 col-md-offset-1">
-                                            <div>
-                                                {inputStatus}
-                                                <div className="form-group">
-                                                    <label htmlFor="name" className="sr-only">Name</label>
-                                                    <input type="name" className="form-control" id="name"
-                                                           value={userInput}
-                                                           onChange={handleInputChange}
-                                                           placeholder="Name"/>
-                                                </div>
+                                        <div>
+                                            {inputStatus}
+                                            <div className="form-group">
+                                                <label htmlFor="name" className="sr-only">Name</label>
+                                                <input type="name" className="form-control" id="name"
+                                                       value={userInput}
+                                                       onChange={handleInputChange}
+                                                       placeholder="Name"/>
                                             </div>
+                                        </div>
 
-                                            <div>
-                                                <button className="btn btn-default btn-block" onClick={handleSaveText}>I am
-                                                    Attending
-                                                </button>
+                                        <div>
+                                            <button className="btn btn-default btn-block" onClick={handleSaveText}>I am
+                                                Attending
+                                            </button>
 
-                                                {showDeleteAll && (
-                                                    <button onClick={handleDeleteAll} className="delete-all-button">Delete All</button>
-                                                )}
-                                            </div>
+                                            {showDeleteAll && (
+                                                <button onClick={handleDeleteAll} className="delete-all-button">Delete
+                                                    All</button>
+                                            )}
+                                        </div>
                                     </div>
                                 </div>
                             </div>

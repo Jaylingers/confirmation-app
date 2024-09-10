@@ -21,7 +21,7 @@
 
     var offcanvasMenu = function () {
 
-        $('#page').prepend('<div id="fh5co-offcanvas" />');
+        $('#page').prepend('<div id="fh5co-offcanvas" class="fh5co-offcanvas" />');
         $('#page').prepend('<a href="#" class="js-fh5co-nav-toggle fh5co-nav-toggle fh5co-nav-white"><i></i></a>');
         var clone1 = $('.menu-1 > ul').clone();
         $('#fh5co-offcanvas').append(clone1);
@@ -181,7 +181,83 @@
         });
 
     };
+    var activeTabWhenCLick = function () {
+        $('.menu-1 li').on('click', function (event) {
+            event.preventDefault();
 
+            // Get the class name from the clicked <li>
+            var className = $(this).attr('class').split(' ')[0]; // Split to handle multiple classes if present
+
+            // Remove 'active' class from all <li> elements
+            $('.menu-1 li').removeClass('active');
+
+            // Add 'active' class to the clicked <li>
+            $(this).addClass('active');
+
+            // Scroll to the element with the ID matching the class name
+            $('html, body').animate({
+                scrollTop: $('#' + className).offset().top
+            }, 500, 'easeInOutExpo');
+
+            return false;
+        });
+        $('.fh5co-offcanvas li').on('click', function (event) {
+            event.preventDefault();
+            // Get the class name from the clicked <li>
+            var className = $(this).attr('class').split(' ')[0]; // Split to handle multiple classes if present
+
+            // Remove 'active' class from all <li> elements
+            $('.fh5co-offcanvas li').removeClass('active');
+
+            // Add 'active' class to the clicked <li>
+            $(this).addClass('active');
+
+            // Scroll to the element with the ID matching the class name
+            $('html, body').animate({
+                scrollTop: $('#' + className).offset().top
+            }, 500, 'easeInOutExpo');
+
+            return false;
+        });
+    };
+    var activeTabWhenScroll = function () {
+        $(window).on('scroll', function () {
+            var scrollPosition = $(window).scrollTop();
+
+            $('.menu-1 li').each(function () {
+                var className = $(this).attr('class').split(' ')[0];
+                var section = $('#' + className);
+
+                if (section.length) {
+                    var sectionOffset = section.offset().top;
+                    var sectionHeight = section.outerHeight();
+
+                    if (scrollPosition >= sectionOffset - 50 && scrollPosition < sectionOffset + sectionHeight - 50) {
+                        $('.menu-1 li').removeClass('active');
+                        $(this).addClass('active');
+                    }
+                }
+            });
+
+            $('.fh5co-offcanvas ul li').each(function () {
+                var className = $(this).attr('class').split(' ')[0];
+                var section = $('#' + className);
+
+                if (section.length) {
+                    var sectionOffset = section.offset().top;
+                    var sectionHeight = section.outerHeight();
+
+                    if (scrollPosition >= sectionOffset - 50 && scrollPosition < sectionOffset + sectionHeight - 50) {
+                        $('.fh5co-offcanvas ul li').removeClass('active');
+                        $(this).addClass('active');
+                    }
+                }
+            });
+
+        });
+
+
+    }
 
     // Loading page
     var loaderPage = function () {
@@ -224,6 +300,19 @@
         });
     }
 
+    var handleScroll = function () {
+        var $nav = $('.fh5co-nav'); // Replace with your actual navigation class or ID
+        $(window).scroll(function () {
+            if ($(this).scrollTop() > 100) { // Change 100 to the scroll position where you want to apply the class
+                $nav.addClass('fh5co-nav-scrolled');
+                $('.fh5co-nav-toggle').addClass('fh5co-nav-toggle-scrolled');
+            } else {
+                $nav.removeClass('fh5co-nav-scrolled');
+                $('.fh5co-nav-toggle').removeClass('fh5co-nav-toggle-scrolled');
+            }
+        });
+    };
+
 
     $(function () {
         setTimeout(function () {
@@ -239,7 +328,10 @@
             counter();
             counterWayPoint();
             countdown();
-        },1000)
+            handleScroll();
+            activeTabWhenCLick();
+            activeTabWhenScroll();
+        }, 1000)
     });
 
 
