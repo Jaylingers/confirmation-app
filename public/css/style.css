@@ -44,7 +44,7 @@ body {
     right: 0;
     bottom: 0;
     left: 0;
-    z-index: 101;
+    z-index: 999;
     background: rgba(0, 0, 0, 0.7);
     content: "";
 }
@@ -1610,9 +1610,11 @@ form label {
     background: transparent;
     border: 2px solid #F14E95;
 }
-#fh5co-offcanvas .active a{
+
+#fh5co-offcanvas .active a {
     color: white !important;
 }
+
 #fh5co-offcanvas {
     position: fixed;
     z-index: 1901;
@@ -2076,18 +2078,18 @@ form label {
 }
 
 .fh5co-nav-scrolled {
-  background-color: rgba(0, 0, 0, 0.9); /* Change as needed */
-  transition: background-color 1.3s ease;
-  position: fixed;
-  height: 4.5em;
-  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
-  display: flex;
-  align-items: center;
-  padding: 23px 0;
+    background-color: rgba(0, 0, 0, 0.9); /* Change as needed */
+    transition: background-color 1.3s ease;
+    position: fixed;
+    height: 4.5em;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    padding: 23px 0;
 }
 
 .fh5co-nav-toggle-scrolled {
-  position: fixed;
+    position: fixed;
 }
 
 @media screen and (max-width: 768px) {
@@ -2110,4 +2112,19 @@ form label {
     .fh5co-nav-toggle-scrolled {
         position: fixed;
     }
+    .header-bg {
+        height: 37.5em !important;
+    }
+}
+
+.header-bg {
+    height: 56.2em;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    z-index: 9;
+    background-image: url('https://www.aboutcatholics.com/wp-content/uploads/2020/08/mjn1lcou1cw-1024x683.jpg');
+    opacity: 0.78;
+    background-size: cover;
+    background-position: top;
 }

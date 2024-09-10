@@ -154,7 +154,8 @@ const ConfirmationPage = () => {
                         style={{
                             // backgroundImage: 'url(images/img_bg_2.jpg)',
                             // backgroundColor:'antiquewhite'
-                            backgroundColor: '#ebd2af'
+                            // backgroundColor: '#ebd2af'
+                            zIndex: 999,
                         }}
 
                         data-stellar-background-ratio="0.5">
@@ -177,7 +178,9 @@ const ConfirmationPage = () => {
                         </div>
                     </div>
                 </header>
+                <div className={'header-bg'}>
 
+                </div>
                 <div id="fh5co-couple">
                     <div className="container">
                         <div className="row">
@@ -524,7 +527,7 @@ const ConfirmationPage = () => {
 
             </div>
             <div className="gototop js-top">
-                <a href="#" className="js-gotop"><i className="icon-arrow-up"></i></a>
+            <a href="#" className="js-gotop"><i className="icon-arrow-up"></i></a>
             </div>
             <div className="confirmation-page">
                 <Modal showModal={showModal} handleClose={() => setShowModal(false)}>
