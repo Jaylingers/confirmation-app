@@ -197,9 +197,17 @@ const ConfirmationPage = () => {
                                 </div>
                                 <div className="desc-groom">
                                     <h3>Exel Alen Tomaquin</h3>
-                                    <p>Far far away, behind the word mountains, far from the countries Vokalia and
-                                        Consonantia, there live the blind texts. Separated they live in
-                                        Bookmarksgrove</p>
+                                    <p>As we come together to celebrate the christening of our precious Tyler David, I wanted to take a moment to express our deepest gratitude for your presence and support.
+
+                                        This day is not only a milestone for our family but also a moment of great joy and significance for all of us. Your role in Tyler David’s life is incredibly important, and we are so thankful to have you as part of this special journey.
+
+                                        To [Godmother’s Name] and [Godfather’s Name], thank you for accepting the honor of guiding Tyler David through life’s spiritual path. We trust that your love, wisdom, and guidance will be a beacon for him as he grows.
+
+                                        To our dear friends, your friendship and support mean the world to us. Having you by our side today and always brings immense joy and comfort to our hearts.
+
+                                        Thank you all for sharing in this beautiful occasion and for being such an integral part of Tyler David’s life. We look forward to creating many more cherished memories together.
+
+                                        With warmest regards and heartfelt thanks.</p>
                                 </div>
                             </div>
                             <p className="heart text-center"><i className="icon-heart2"></i></p>
@@ -209,9 +217,17 @@ const ConfirmationPage = () => {
                                 </div>
                                 <div className="desc-bride">
                                     <h3>Cheryllyn Jordan Torres Tomaquin</h3>
-                                    <p>Far far away, behind the word mountains, far from the countries Vokalia and
-                                        Consonantia, there live the blind texts. Separated they live in
-                                        Bookmarksgrove</p>
+                                    <p> As we celebrate the christening of our beloved Tyler David, I wanted to take a moment to express my heartfelt gratitude for your support and presence on this special day.
+
+                                        Today marks a significant milestone in Tyler David’s life, and it brings us immense joy to share this moment with all of you. Your role in his life is deeply cherished, and we feel incredibly fortunate to have such wonderful people like you surrounding him.
+
+                                        To [Godmother’s Name] and [Godfather’s Name], thank you for taking on the meaningful role of guiding Tyler David’s spiritual journey. Your love, care, and wisdom will undoubtedly provide him with a strong foundation as he grows.
+
+                                        To our dear friends, your unwavering support and friendship mean so much to us. Having you here to celebrate with us adds to the joy and significance of this day.
+
+                                        Thank you all for being a part of this beautiful occasion and for playing such an important role in Tyler David’s life. We look forward to many more moments of joy and shared experiences as a family.
+
+                                        With love and gratitude.</p>
                                 </div>
                             </div>
                         </div>
@@ -231,42 +247,51 @@ const ConfirmationPage = () => {
                             <div className="display-t">
                                 <div className="display-tc">
                                     <div className="col-md-10 col-md-offset-1">
-                                        <div className="col-md-6 col-sm-6 text-center">
+                                        <div className="col-md-4 col-sm-4 text-center">
                                             <div className="event-wrap animate-box">
-                                                <h3>Main Ceremony</h3>
+                                                <h3>THEME</h3>
                                                 <div className="event-col">
                                                     <i className="icon-clock"></i>
-                                                    <span>4:00 PM</span>
-                                                    <span>6:00 PM</span>
+                                                    <span>Black</span>
                                                 </div>
                                                 <div className="event-col">
                                                     <i className="icon-calendar"></i>
-                                                    <span>Monday 28</span>
-                                                    <span>November, 2016</span>
+                                                    <span>White</span>
                                                 </div>
-                                                <p>Far far away, behind the word mountains, far from the countries
-                                                    Vokalia and Consonantia, there live the blind texts. Separated they
-                                                    live in Bookmarksgrove right at the coast of the Semantics, a large
-                                                    language ocean.</p>
+                                                <h3>DRESS CODE</h3>
+                                                <p>Any Formal Attire</p>
                                             </div>
                                         </div>
-                                        <div className="col-md-6 col-sm-6 text-center">
+                                        <div className="col-md-4 col-sm-4 text-center">
                                             <div className="event-wrap animate-box">
-                                                <h3>Baptism Party</h3>
+                                                <h3>BAPTISM Ceremony</h3>
                                                 <div className="event-col">
                                                     <i className="icon-clock"></i>
-                                                    <span>7:00 PM</span>
-                                                    <span>12:00 AM</span>
+                                                    <span>10:00 AM</span>
+                                                    <span>11:00 AM</span>
                                                 </div>
                                                 <div className="event-col">
                                                     <i className="icon-calendar"></i>
-                                                    <span>Monday 28</span>
-                                                    <span>November, 2016</span>
+                                                    <span>Sunday 29</span>
+                                                    <span>September, 2024</span>
                                                 </div>
-                                                <p>Far far away, behind the word mountains, far from the countries
-                                                    Vokalia and Consonantia, there live the blind texts. Separated they
-                                                    live in Bookmarksgrove right at the coast of the Semantics, a large
-                                                    language ocean.</p>
+                                                <p>Cordova Church</p>
+                                            </div>
+                                        </div>
+                                        <div className="col-md-4 col-sm-4 text-center">
+                                            <div className="event-wrap animate-box">
+                                                <h3>CHRISTENING CELEBRATION</h3>
+                                                <div className="event-col">
+                                                    <i className="icon-clock"></i>
+                                                    <span>11:00 AM</span>
+                                                    <span>ONWARDS</span>
+                                                </div>
+                                                <div className="event-col">
+                                                    <i className="icon-calendar"></i>
+                                                    <span>Sunday 29</span>
+                                                    <span>September, 2024</span>
+                                                </div>
+                                                <p>House</p>
                                             </div>
                                         </div>
                                     </div>
@@ -295,8 +320,26 @@ const ConfirmationPage = () => {
                                         style={{backgroundImage: "url(images/couple-1.jpg)"}}>
                                         <a href="images/gallery-1.jpg">
                                             <div className="case-studies-summary">
-                                                <span>14 Photos</span>
-                                                <h2>Two Glas of Juice</h2>
+                                                <span>0 Photos</span>
+                                                <h2>Tyler David</h2>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li className="one-third animate-box" data-animate-effect="fadeIn"
+                                        style={{backgroundImage: "url(images/couple-1.jpg)"}}>
+                                        <a href="#" className="color-3">
+                                            <div className="case-studies-summary">
+                                                <span>0 Photos</span>
+                                                <h2>Family</h2>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li className="one-third animate-box" data-animate-effect="fadeIn"
+                                        style={{backgroundImage: "url(images/couple-1.jpg)"}}>
+                                        <a href="images/gallery-1.jpg">
+                                            <div className="case-studies-summary">
+                                                <span>0 Photos</span>
+                                                <h2>God Father</h2>
                                             </div>
                                         </a>
                                     </li>
@@ -304,19 +347,8 @@ const ConfirmationPage = () => {
                                         style={{backgroundImage: "url(images/couple-1.jpg)"}}>
                                         <a href="#" className="color-2">
                                             <div className="case-studies-summary">
-                                                <span>30 Photos</span>
-                                                <h2>Timer starts now!</h2>
-                                            </div>
-                                        </a>
-                                    </li>
-
-
-                                    <li className="one-third animate-box" data-animate-effect="fadeIn"
-                                        style={{backgroundImage: "url(images/couple-1.jpg)"}}>
-                                        <a href="#" className="color-3">
-                                            <div className="case-studies-summary">
-                                                <span>90 Photos</span>
-                                                <h2>Beautiful sunset</h2>
+                                                <span>0 Photos</span>
+                                                <h2>God Mother</h2>
                                             </div>
                                         </a>
                                     </li>
@@ -324,56 +356,8 @@ const ConfirmationPage = () => {
                                         style={{backgroundImage: "url(images/couple-1.jpg)"}}>
                                         <a href="#" className="color-4">
                                             <div className="case-studies-summary">
-                                                <span>12 Photos</span>
-                                                <h2>Company's Conference Room</h2>
-                                            </div>
-                                        </a>
-                                    </li>
-
-                                    <li className="one-third animate-box" data-animate-effect="fadeIn"
-                                        style={{backgroundImage: "url(images/couple-1.jpg)"}}>
-                                        <a href="#" className="color-3">
-                                            <div className="case-studies-summary">
-                                                <span>50 Photos</span>
-                                                <h2>Useful baskets</h2>
-                                            </div>
-                                        </a>
-                                    </li>
-                                    <li className="one-third animate-box" data-animate-effect="fadeIn"
-                                        style={{backgroundImage: "url(images/couple-1.jpg)"}}>
-                                        <a href="#" className="color-4">
-                                            <div className="case-studies-summary">
-                                                <span>45 Photos</span>
-                                                <h2>Skater man in the road</h2>
-                                            </div>
-                                        </a>
-                                    </li>
-
-                                    <li className="one-third animate-box" data-animate-effect="fadeIn"
-                                        style={{backgroundImage: "url(images/couple-1.jpg)"}}>
-                                        <a href="#" className="color-4">
-                                            <div className="case-studies-summary">
-                                                <span>35 Photos</span>
-                                                <h2>Two Glas of Juice</h2>
-                                            </div>
-                                        </a>
-                                    </li>
-
-                                    <li className="one-third animate-box" data-animate-effect="fadeIn"
-                                        style={{backgroundImage: "url(images/couple-1.jpg)"}}>
-                                        <a href="#" className="color-5">
-                                            <div className="case-studies-summary">
-                                                <span>90 Photos</span>
-                                                <h2>Timer starts now!</h2>
-                                            </div>
-                                        </a>
-                                    </li>
-                                    <li className="one-third animate-box" data-animate-effect="fadeIn"
-                                        style={{backgroundImage: "url(images/couple-1.jpg)"}}>
-                                        <a href="#" className="color-6">
-                                            <div className="case-studies-summary">
-                                                <span>56 Photos</span>
-                                                <h2>Beautiful sunset</h2>
+                                                <span>0 Photos</span>
+                                                <h2>Others</h2>
                                             </div>
                                         </a>
                                     </li>
@@ -458,13 +442,11 @@ const ConfirmationPage = () => {
                                                     <figure>
                                                         <img src="images/couple-1.jpg" alt="user"/>
                                                     </figure>
-                                                    <span>John Doe, via <a href="#"
-                                                                           className="twitter">Twitter</a></span>
+                                                    <span></span>
                                                     <blockquote>
-                                                        <p>"Far far away, behind the word mountains, far from the
-                                                            countries Vokalia and Consonantia, there live the blind
-                                                            texts. Separated they live in Bookmarksgrove right at the
-                                                            coast of the Semantics"</p>
+                                                        <p>Thank you for joining us in celebrating Tyler David’s christening and for being such a meaningful part of our journey. Your friendship and love make this day even more special.
+
+                                                            With warmest regards and heartfelt thanks.</p>
                                                     </blockquote>
                                                 </div>
                                             </div>
@@ -473,12 +455,14 @@ const ConfirmationPage = () => {
                                                     <figure>
                                                         <img src="images/couple-2.jpg" alt="user"/>
                                                     </figure>
-                                                    <span>John Doe, via <a href="#"
-                                                                           className="twitter">Twitter</a></span>
+                                                    <span></span>
                                                     <blockquote>
-                                                        <p>"Far far away, behind the word mountains, far from the
-                                                            countries Vokalia and Consonantia, at the coast of the
-                                                            Semantics, a large language ocean."</p>
+                                                        <p>Thank you for joining us in celebrating Tyler David’s
+                                                            christening and for being such a meaningful part of our
+                                                            journey. Your friendship and love make this day even more
+                                                            special.
+
+                                                            With warmest regards and heartfelt thanks.</p>
                                                     </blockquote>
                                                 </div>
                                             </div>
@@ -487,13 +471,14 @@ const ConfirmationPage = () => {
                                                     <figure>
                                                         <img src="images/couple-3.jpg" alt="user"/>
                                                     </figure>
-                                                    <span>John Doe, via <a href="#"
-                                                                           className="twitter">Twitter</a></span>
+                                                    <span></span>
                                                     <blockquote>
-                                                        <p>"Far far away, far from the countries Vokalia and
-                                                            Consonantia, there live the blind texts. Separated they live
-                                                            in Bookmarksgrove right at the coast of the Semantics, a
-                                                            large language ocean."</p>
+                                                        <p>Thank you for joining us in celebrating Tyler David’s
+                                                            christening and for being such a meaningful part of our
+                                                            journey. Your friendship and love make this day even more
+                                                            special.
+
+                                                            With warmest regards and heartfelt thanks.</p>
                                                     </blockquote>
                                                 </div>
                                             </div>
@@ -508,7 +493,7 @@ const ConfirmationPage = () => {
                 <footer id="fh5co-footer" role="contentinfo">
                     <div className="container">
 
-                        <div className="row copyright">
+                    <div className="row copyright">
                             <div className="col-md-12 text-center">
                                 <p>
                                     <small className="block">&copy; 2024. All Rights Reserved.</small>
@@ -527,7 +512,7 @@ const ConfirmationPage = () => {
 
             </div>
             <div className="gototop js-top">
-            <a href="#" className="js-gotop"><i className="icon-arrow-up"></i></a>
+                <a href="#" className="js-gotop"><i className="icon-arrow-up"></i></a>
             </div>
             <div className="confirmation-page">
                 <Modal showModal={showModal} handleClose={() => setShowModal(false)}>
