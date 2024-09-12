@@ -11,6 +11,13 @@
 * 	Template Style 
 *
 * ======================================================= */
+
+#name::placeholder{
+    color:gray !important;
+    font-family: "Sacramento", Arial, serif !important;
+    font-weight: bolder;
+    font-size: 1.5em;
+}
 body {
     font-family: "Work Sans", Arial, sans-serif;
     font-weight: 400;
