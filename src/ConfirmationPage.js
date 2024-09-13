@@ -193,7 +193,7 @@ const ConfirmationPage = () => {
                             <div className="col-md-8 col-md-offset-2 text-center">
                                 <div className="display-t">
                                     <div className="display-tc animate-box" data-animate-effect="fadeIn">
-                                        <h1>Tyler David Tomaquin</h1>
+                                        <h1>David Tyler Tomaquin</h1>
                                         <h2>You are invited</h2>
                                         <div className="simply-countdown simply-countdown-one"></div>
                                         {showSaveDateButton && (
@@ -228,7 +228,7 @@ const ConfirmationPage = () => {
                             <div className="col-md-8 col-md-offset-2 text-center fh5co-heading animate-box">
                                 <h2 id={'when'}>Hello!</h2>
                                 <h3>September 29, 2024</h3>
-                                <p>We invited you to celebrate our child baptism</p>
+                                <p>You are invited to celebrate your child's baptism.</p>
                             </div>
                         </div>
                         <div className="couple-wrap animate-box">
@@ -237,47 +237,47 @@ const ConfirmationPage = () => {
                                     <img src="images/groom.jpg" alt="groom" className="img-responsive"/>
                                 </div>
                                 <div className="desc-groom">
-                                    <h3>Exel Alen Tomaquin</h3>
-                                    <p>As we come together to celebrate the christening of our precious Tyler David, I
+                                    <h3>Tyler's Parents</h3>
+                                    <p>As we come together to celebrate the christening of our precious David Tyler, I
                                         wanted to take a moment to express our deepest gratitude for your presence and
                                         support.
 
                                         This day is not only a milestone for our family but also a moment of great joy
-                                        and significance for all of us. Your role in Tyler David’s life is incredibly
+                                        and significance for all of us. Your role in David Tyler’s life is incredibly
                                         important, and we are so thankful to have you as part of this special journey.
 
                                         To [Godmother’s Name] and [Godfather’s Name], thank you for accepting the honor
-                                        of guiding Tyler David through life’s spiritual path. We trust that your love,
+                                        of guiding David Tyler through life’s spiritual path. We trust that your love,
                                         wisdom, and guidance will be a beacon for him as he grows.
 
                                         To our dear friends, your friendship and support mean the world to us. Having
                                         you by our side today and always brings immense joy and comfort to our hearts.
 
                                         Thank you all for sharing in this beautiful occasion and for being such an
-                                        integral part of Tyler David’s life. We look forward to creating many more
+                                        integral part of David Tyler’s life. We look forward to creating many more
                                         cherished memories together.
 
                                         With warmest regards and heartfelt thanks.</p>
                                 </div>
                             </div>
                             <p className="heart text-center"><i className="icon-heart2"></i></p>
-                            <div className="couple-half">
+                            <div className="couple-half couple-half-hide-sm-mode">
                                 <div className="bride">
                                     <img src="images/bride.jpg" alt="groom" className="img-responsive"/>
                                 </div>
                                 <div className="desc-bride">
                                     <h3>Cheryllyn Jordan Torres Tomaquin</h3>
-                                    <p> As we celebrate the christening of our beloved Tyler David, I wanted to take a
+                                    <p> As we celebrate the christening of our beloved David Tyler, I wanted to take a
                                         moment to express my heartfelt gratitude for your support and presence on this
                                         special day.
 
-                                        Today marks a significant milestone in Tyler David’s life, and it brings us
+                                        Today marks a significant milestone in David Tyler’s life, and it brings us
                                         immense joy to share this moment with all of you. Your role in his life is
                                         deeply cherished, and we feel incredibly fortunate to have such wonderful people
                                         like you surrounding him.
 
                                         To [Godmother’s Name] and [Godfather’s Name], thank you for taking on the
-                                        meaningful role of guiding Tyler David’s spiritual journey. Your love, care, and
+                                        meaningful role of guiding David Tyler’s spiritual journey. Your love, care, and
                                         wisdom will undoubtedly provide him with a strong foundation as he grows.
 
                                         To our dear friends, your unwavering support and friendship mean so much to us.
@@ -285,7 +285,7 @@ const ConfirmationPage = () => {
                                         day.
 
                                         Thank you all for being a part of this beautiful occasion and for playing such
-                                        an important role in Tyler David’s life. We look forward to many more moments of
+                                        an important role in David Tyler’s life. We look forward to many more moments of
                                         joy and shared experiences as a family.
 
                                         With love and gratitude.</p>
@@ -382,7 +382,7 @@ const ConfirmationPage = () => {
                                         <a href="images/gallery-1.jpg">
                                             <div className="case-studies-summary">
                                                 <span>0 Photos</span>
-                                                <h2>Tyler David</h2>
+                                                <h2>David Tyler</h2>
                                             </div>
                                         </a>
                                     </li>
@@ -505,7 +505,7 @@ const ConfirmationPage = () => {
                                                     </figure>
                                                     <span></span>
                                                     <blockquote>
-                                                        <p>Thank you for joining us in celebrating Tyler David’s
+                                                        <p>Thank you for joining us in celebrating David Tyler’s
                                                             christening and for being such a meaningful part of our
                                                             journey. Your friendship and love make this day even more
                                                             special.
@@ -521,7 +521,7 @@ const ConfirmationPage = () => {
                                                     </figure>
                                                     <span></span>
                                                     <blockquote>
-                                                        <p>Thank you for joining us in celebrating Tyler David’s
+                                                        <p>Thank you for joining us in celebrating David Tyler’s
                                                             christening and for being such a meaningful part of our
                                                             journey. Your friendship and love make this day even more
                                                             special.
@@ -537,7 +537,7 @@ const ConfirmationPage = () => {
                                                     </figure>
                                                     <span></span>
                                                     <blockquote>
-                                                        <p>Thank you for joining us in celebrating Tyler David’s
+                                                        <p>Thank you for joining us in celebrating David Tyler’s
                                                             christening and for being such a meaningful part of our
                                                             journey. Your friendship and love make this day even more
                                                             special.
