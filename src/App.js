@@ -34,10 +34,7 @@ function App() {
     }, [sessionLogin, nameInput, emailInput]);
 
     const handleSaveText = (event) => {
-        event.preventDefault();
         setSessionLogin(true);
-        setShowModal(false);
-        //refresh page
         window.location.reload();
     };
 

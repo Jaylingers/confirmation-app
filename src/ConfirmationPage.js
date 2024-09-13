@@ -441,7 +441,7 @@ const ConfirmationPage = () => {
 									<i className="icon-users"></i>
 								</span>
                                             <span className="counter js-counter" data-from="0" data-to={fileCount}
-                                                  data-speed="10000" data-refresh-interval="50"></span>
+                                                  data-speed="5000" data-refresh-interval="50"></span>
                                             <span className="counter-label">Guest</span>
 
                                         </div>
@@ -506,35 +506,16 @@ const ConfirmationPage = () => {
                                                     <span></span>
                                                     <blockquote>
                                                         <p>Thank you for joining us in celebrating David Tyler’s
-                                                            christening and for being such a meaningful part of our
-                                                            journey. Your friendship and love make this day even more
+                                                            christening and for being such a meaningful part of
+                                                            our
+                                                            journey. Your friendship and love make this day even
+                                                            more
                                                             special.
 
                                                             With warmest regards and heartfelt thanks.</p>
                                                     </blockquote>
                                                 </div>
                                             </div>
-                                            {
-                                                fileCount < 2 && (
-                                                    <div className="item">
-                                                        <div className="testimony-slide  text-center">
-                                                            <figure>
-                                                                <img src="images/couple-3.jpg" alt="user"/>
-                                                            </figure>
-                                                            <span></span>
-                                                            <blockquote>
-                                                                <p>Thank you for joining us in celebrating David Tyler’s
-                                                                    christening and for being such a meaningful part of our
-                                                                    journey. Your friendship and love make this day even
-                                                                    more
-                                                                    special.
-
-                                                                    With warmest regards and heartfelt thanks.</p>
-                                                            </blockquote>
-                                                        </div>
-                                                    </div>)
-                                            }
-
                                             {
                                                 fileList.map((file, index) => (
                                                     <div className="item" key={index}>
