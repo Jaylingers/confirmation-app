@@ -514,38 +514,42 @@ const ConfirmationPage = () => {
                                                     </blockquote>
                                                 </div>
                                             </div>
-                                            <div className="item">
-                                                <div className="testimony-slide active text-center">
-                                                    <figure>
-                                                        <img src="images/couple-2.jpg" alt="user"/>
-                                                    </figure>
-                                                    <span></span>
-                                                    <blockquote>
-                                                        <p>Thank you for joining us in celebrating David Tyler’s
-                                                            christening and for being such a meaningful part of our
-                                                            journey. Your friendship and love make this day even more
-                                                            special.
+                                            {
+                                                fileCount < 2 && (
+                                                    <div className="item">
+                                                        <div className="testimony-slide  text-center">
+                                                            <figure>
+                                                                <img src="images/couple-3.jpg" alt="user"/>
+                                                            </figure>
+                                                            <span></span>
+                                                            <blockquote>
+                                                                <p>Thank you for joining us in celebrating David Tyler’s
+                                                                    christening and for being such a meaningful part of our
+                                                                    journey. Your friendship and love make this day even
+                                                                    more
+                                                                    special.
 
-                                                            With warmest regards and heartfelt thanks.</p>
-                                                    </blockquote>
-                                                </div>
-                                            </div>
-                                            <div className="item">
-                                                <div className="testimony-slide active text-center">
-                                                    <figure>
-                                                        <img src="images/couple-3.jpg" alt="user"/>
-                                                    </figure>
-                                                    <span></span>
-                                                    <blockquote>
-                                                        <p>Thank you for joining us in celebrating David Tyler’s
-                                                            christening and for being such a meaningful part of our
-                                                            journey. Your friendship and love make this day even more
-                                                            special.
+                                                                    With warmest regards and heartfelt thanks.</p>
+                                                            </blockquote>
+                                                        </div>
+                                                    </div>)
+                                            }
 
-                                                            With warmest regards and heartfelt thanks.</p>
-                                                    </blockquote>
-                                                </div>
-                                            </div>
+                                            {
+                                                fileList.map((file, index) => (
+                                                    <div className="item" key={index}>
+                                                        <div className="testimony-slide text-center">
+                                                            <figure>
+                                                                <img src="images/couple-3.jpg" alt="user"/>
+                                                            </figure>
+                                                            <span></span>
+                                                            <blockquote>
+                                                                <p>{file.name.split(',')[1].split('.')[0]}</p>
+                                                            </blockquote>
+                                                        </div>
+                                                    </div>
+                                                ))
+                                            }
                                         </div>
                                     </div>
                                 </div>
