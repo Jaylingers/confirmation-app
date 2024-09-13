@@ -1,32 +1,22 @@
-import React, { useRef, useEffect } from 'react';
-import './ConfirmationPage.css'; // Import CSS file
+import React, {useRef} from 'react';
+import './ConfirmationPage.css';
 
-const Modal = ({ showModal, handleClose, children }) => {
+const Modal = ({title, message, onConfirm, onCancel, children, shoButton}) => {
     const modalRef = useRef();
-
-    useEffect(() => {
-        const handleClickOutside = (event) => {
-            if (modalRef.current && !modalRef.current.contains(event.target)) {
-                handleClose();
-            }
-        };
-
-        if (showModal) {
-            document.addEventListener('mousedown', handleClickOutside);
-        }
-
-        return () => {
-            document.removeEventListener('mousedown', handleClickOutside);
-        };
-    }, [showModal, handleClose]);
-
-    if (!showModal) return null;
 
     return (
         <div className="modal-overlay">
             <div className="modal-content" ref={modalRef}>
-                <button className="close-button" onClick={handleClose}>X</button>
                 {children}
+                <h2>{title}</h2>
+                <p>{message}</p>
+                {shoButton &&
+                    <div className="modal-buttons">
+                        <button className="btn-confirm" onClick={onConfirm}>Continue</button>
+                        &nbsp;
+                        <button className="btn-cancel" onClick={onCancel}>Cancel</button>
+                    </div>
+                }
             </div>
         </div>
     );

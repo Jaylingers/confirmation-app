@@ -172,7 +172,6 @@
             var $win = $(window);
             mobileMenuOutsideClick();
             contentWayPoint();
-            loaderPage();
             if ($win.scrollTop() > 200) {
                 $('.js-top').addClass('active');
             } else {
