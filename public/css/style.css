@@ -2177,18 +2177,15 @@ form label {
     .header-bg {
         height: 37.5em !important;
     }
-    .zoom-0-7{
-        zoom: 0.8 !important;
-    }
     .couple-half-hide-sm-mode{
         display: none !important;
     }
     body{
-        zoom: 0.8 !important;
+        zoom: 0.9 !important;
     }
 }
 .zoom-0-7{
-    zoom: 0.8;
+    zoom: 0.9;
 }
 .header-bg {
     height: 56.2em;
