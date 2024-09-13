@@ -161,12 +161,12 @@ const ConfirmationPage = () => {
                     <div className="container">
                         <div className="row">
                             <div className="col-xs-2">
-                                <div id="fh5co-logo"><a href="index.html">Baptism<strong></strong></a></div>
+                                <div id="fh5co-logo"><a href="#">Baptism<strong></strong></a></div>
                             </div>
                             <div className="col-xs-10 text-right menu-1">
                                 <ul>
                                     <li className={'home active'}><a href="#">Home</a></li>
-                                    <li className={'when'}><a href="#">When</a></li>
+                                    <li className={'when'}><a href="#">Message</a></li>
                                     <li className={'events'}><a href="#">Events</a></li>
                                     <li className={'gallery'}><a href="#">Gallery</a></li>
                                     <li className={'guest'}><a href="#">Guest</a></li>
