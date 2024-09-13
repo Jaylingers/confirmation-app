@@ -2181,7 +2181,10 @@ form label {
         display: none !important;
     }
     body{
-        zoom: 0.86 !important;
+        zoom: 0.9 !important;
+    }
+    .simply-countdown{
+        zoom: 0.7 !important;
     }
 }
 .zoom-0-7{
