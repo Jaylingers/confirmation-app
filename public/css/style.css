@@ -34,6 +34,14 @@
     width: 100%;
 }
 
+.modal-color-blue{
+    background: #6d9ac4 !important;
+}
+
+.zoom-0-7{
+    zoom: 0.7 !important;
+}
+
 .modal-inner-content {
     /* Add any additional styling for inner content */
 }

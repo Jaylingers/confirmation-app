@@ -53,31 +53,18 @@ const ConfirmationPage = () => {
     };
 
     const checkSaveDateButtonVisibility = async () => {
-        const sessionName = sessionStorage.getItem('name');
         const sessionEmail = sessionStorage.getItem('email');
-        if (sessionName && sessionEmail) {
-
-            const fullNameEmail = `${sessionName},${sessionEmail}`;
+        if (sessionEmail) {
             try {
-                // const q = query(collection(firestore, 'samples'), where('name', '==', fullNameEmail));
-                // const querySnapshot = await getDocs(q);
-                //chekc fileList if the name is already there
-                console.log('jaylinger', fileList)
                 const checkFile = fileList.find(file => {
-                    console.log('filename', file.name);
-                    return file.name === `${sessionName},${sessionEmail}.txt`; // Added 'return' here
+                    const SecondWord = file.name.split(',')[1].split('.')[0];
+                    return SecondWord + ".com" === sessionEmail; // Added 'return' here
                 });
                 if (checkFile) {
                     setShowSaveDateButton(false);
                 } else {
                     setShowSaveDateButton(true);
                 }
-
-                // if (!querySnapshot.empty) {
-                //     setShowSaveDateButton(true); // Show the button if the entry exists
-                // } else {
-                //     setShowSaveDateButton(false); // Hide the button if the entry does not exist
-                // }
             } catch (error) {
                 console.error('Error checking Firestore:', error);
                 setShowSaveDateButton(false); // Hide the button in case of an error

@@ -63,6 +63,7 @@ function App() {
                     <Modal
                         showModal={showModal}
                         handleClose={() => setShowModal(false)}
+                        modalOverLay={'modal-color-blue zoom-0-7'}
                     >
                         <div className="modal-inner-content">
                             <div id="fh5co-started">

@@ -6,7 +6,10 @@
   <component name="ChangeListManager">
     <list default="true" id="901f16b0-dfb0-4498-977c-7fc19d6318a2" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ConfirmationPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/ConfirmationPage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Modal.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Modal.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,6 +45,7 @@
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;npm.start.executor&quot;: &quot;Run&quot;,
     &quot;ts.external.directory.path&quot;: &quot;C:\\Program Files\\JetBrains\\IntelliJ IDEA 2024.2\\plugins\\javascript-plugin\\jsLanguageServicesImpl\\external&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
@@ -54,6 +58,23 @@
       <recent name="C:\Users\JAYLINGERS\Documents\GitHub\confirmation-app\src\js" />
       <recent name="C:\Users\JAYLINGERS\Documents\GitHub\confirmation-app\src\css" />
     </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="start" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="start" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="npm.start" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
@@ -82,6 +103,8 @@
       <workItem from="1725959277894" duration="4817000" />
       <workItem from="1726008070432" duration="2384000" />
       <workItem from="1726048425740" duration="1533000" />
+      <workItem from="1726188300118" duration="1346000" />
+      <workItem from="1726215074647" duration="1040000" />
     </task>
     <servers />
   </component>
@@ -93,7 +116,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/src/ConfirmationPage.js</url>
-          <line>512</line>
+          <line>499</line>
           <option name="timeStamp" value="2" />
         </line-breakpoint>
       </breakpoints>
