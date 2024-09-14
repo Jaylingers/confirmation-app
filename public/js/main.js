@@ -143,8 +143,8 @@
 
 
     var testimonialCarousel = function () {
-        var owl = $('.owl-carousel-fullwidth');
-        if (owl) {
+        var count = $('.owl-carousel-fullwidth .item').length;
+        if (count > 1) {
             owl.owlCarousel({
                 items: 1,
                 loop: true,
