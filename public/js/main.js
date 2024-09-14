@@ -323,7 +323,7 @@
             burgerMenu();
             contentWayPoint();
             dropdown();
-
+            testimonialCarousel();
             goToTop();
             loaderPage();
             counter();
@@ -332,7 +332,6 @@
             handleScroll();
             activeTabWhenCLick();
             activeTabWhenScroll();
-            testimonialCarousel();
         }, 1000)
     });
 
