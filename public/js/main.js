@@ -33,25 +33,23 @@
             .find('li')
             .removeClass('has-dropdown');
 
-        var count = $('.owl-carousel-fullwidth .item').length;
-        if (count > 1) {
-            // Hover dropdown menu on mobile
-            $('.offcanvas-has-dropdown').mouseenter(function () {
-                var $this = $(this);
+        // Hover dropdown menu on mobile
+        $('.offcanvas-has-dropdown').mouseenter(function () {
+            var $this = $(this);
 
-                $this
-                    .addClass('active')
-                    .find('ul')
-                    .slideDown(500, 'easeOutExpo');
-            }).mouseleave(function () {
+            $this
+                .addClass('active')
+                .find('ul')
+                .slideDown(500, 'easeOutExpo');
+        }).mouseleave(function () {
 
-                var $this = $(this);
-                $this
-                    .removeClass('active')
-                    .find('ul')
-                    .slideUp(500, 'easeOutExpo');
-            });
-        }
+            var $this = $(this);
+            $this
+                .removeClass('active')
+                .find('ul')
+                .slideUp(500, 'easeOutExpo');
+        });
+
 
         $(window).resize(function () {
 
@@ -143,8 +141,8 @@
 
 
     var testimonialCarousel = function () {
-        var count = $('.owl-carousel-fullwidth .item').length;
-        if (count > 1) {
+        var owl = $('.owl-carousel-fullwidth');
+        if(owl) {
             owl.owlCarousel({
                 items: 1,
                 loop: true,

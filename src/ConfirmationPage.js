@@ -516,6 +516,24 @@ const ConfirmationPage = () => {
                                                     </blockquote>
                                                 </div>
                                             </div>
+                                            <div className="item">
+                                                <div className="testimony-slide text-center">
+                                                    <figure>
+                                                        <img src="images/couple-1.jpg" alt="user"/>
+                                                    </figure>
+                                                    <span></span>
+                                                    <blockquote>
+                                                        <p>Thank you for joining us in celebrating David Tyler’s
+                                                            christening and for being such a meaningful part of
+                                                            our
+                                                            journey. Your friendship and love make this day even
+                                                            more
+                                                            special.
+
+                                                            With warmest regards and heartfelt thanks.</p>
+                                                    </blockquote>
+                                                </div>
+                                            </div>
                                             {
                                                 fileList.map((file, index) => (
                                                     <div className="item" key={index}>
@@ -561,7 +579,7 @@ const ConfirmationPage = () => {
 
             </div>
             <div className="gototop js-top">
-                <a href="#" className="js-gotop"><i className="icon-arrow-up"></i></a>
+            <a href="#" className="js-gotop"><i className="icon-arrow-up"></i></a>
             </div>
 
         </>
