@@ -340,6 +340,13 @@
         });
     }
 
+    const checkAdmin = () => {
+        const sessionName = sessionStorage.getItem('firstName') + sessionStorage.getItem('lastName');
+        if (sessionName !== 'adminadmin') {
+            $('.registered').remove();
+        }
+    }
+
     $(function () {
         setTimeout(function () {
             mobileMenuOutsideClick();
@@ -358,6 +365,7 @@
             activeTabWhenScroll();
             activeTabWhenCLick();
             closeRegistered();
+            checkAdmin();
         }, 1000)
     });
 

@@ -9,10 +9,8 @@ const ConfirmationPage = () => {
     const [showDeleteAll, setShowDeleteAll] = useState(false);
     const [showModal, setShowModal] = useState(false); // Show modal by default
     const [showConfirmation, setShowConfirmation] = useState(false); // For confirmation modal
-    const [showList, setShowList] = useState(false); // Show list of registered
     const [confirmationMessage, setConfirmationMessage] = useState(''); // Confirmation message
     const [showSaveDateButton, setShowSaveDateButton] = useState(false); // Control button visibility
-
 
     useEffect(() => {
         fetchFileList();
@@ -58,6 +56,7 @@ const ConfirmationPage = () => {
                 } else {
                     setShowSaveDateButton(true);
                 }
+
             } catch (error) {
                 console.error('Error checking Firestore:', error);
                 setShowSaveDateButton(false); // Hide the button in case of an error
