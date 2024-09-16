@@ -131,12 +131,13 @@ const ConfirmationPage = () => {
                             </div>
                             <div className="col-xs-10 text-right menu-1">
                                 <ul>
-                                    <li className={'home active'}><a href="#">Home</a></li>
-                                    <li className={'when'}><a href="#">Message</a></li>
-                                    <li className={'events'}><a href="#">Events</a></li>
-                                    <li className={'gallery'}><a href="#">Gallery</a></li>
-                                    <li className={'guest'}><a href="#">Guest</a></li>
-                                    <li className={'wishes'}><a href="#">Wishes</a></li>
+                                    <li className={'home active'}> <i className={'icon-home'} /> <a href="#">Home</a></li>
+                                    <li className={'when'}> <i className={'icon-message'} /><a href="#">Message</a></li>
+                                    <li className={'events'}> <i className={'icon-evernote'} /><a href="#">Events</a></li>
+                                    <li className={'gallery'}> <i className={'icon-image'} /><a href="#">Gallery</a>
+                                    </li>
+                                    <li className={'guest'}> <i className={'icon-add-to-list'} /><a href="#">Guest</a></li>
+                                    <li className={'wishes'}> <i className={'icon-air-play'} /><a href="#">Wishes</a></li>
                                 </ul>
                             </div>
                         </div>

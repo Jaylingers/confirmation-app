@@ -1680,6 +1680,7 @@ form label {
 
 #fh5co-offcanvas .active a {
     color: yellow !important;
+    font-size: 18px;
 }
 
 #fh5co-offcanvas {
@@ -1688,9 +1689,8 @@ form label {
     width: 270px;
     /*background: black;*/
     background: #7ebdc6;
-    top: 0;
+    top: 81px !important;
     right: 0;
-    top: 0;
     bottom: 0;
     padding: 45px 40px 40px 40px;
     overflow-y: auto;
@@ -2169,7 +2169,7 @@ form label {
         background-color: rgba(0, 0, 0, 0.9); /* Change as needed */
         transition: background-color 1.3s ease;
         position: fixed;
-        height: 4.5em;
+        height: 5em;
         box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
         display: flex;
         align-items: center;
@@ -2226,4 +2226,24 @@ form label {
 .icon-circle-blue {
     background: #0066ff;
     border-radius: 50%;
+}
+
+ul li {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+ul li i{
+    margin-right: 0.5em;
+}
+
+ul li i{
+    display: none;
+}
+@media screen and (max-width: 768px) {
+    ul li i{
+        display: block;
+        font-size: 1.5em;
+    }
 }
