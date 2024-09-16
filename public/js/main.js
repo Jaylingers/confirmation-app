@@ -192,14 +192,20 @@
             // Remove 'active' class from all <li> elements
             $('.menu-1 li').removeClass('active');
 
-            // Add 'active' class to the clicked <li>
-            $(this).addClass('active');
-
             if (className !== 'logout') {
+                // Add 'active' class to the clicked <li>
+                $(this).addClass('active');
                 // Scroll to the element with the ID matching the class name
                 $('html, body').animate({
                     scrollTop: $('#' + className).offset().top
                 }, 500, 'easeInOutExpo');
+            }  else {
+                //add alert if user want to logout, yes or no
+                var r = confirm("Are you sure you want to logout?");
+                if (r === true) {
+                    sessionStorage.clear();
+                    window.location = '/';
+                }
             }
 
 
@@ -213,11 +219,10 @@
             // Remove 'active' class from all <li> elements
             $('.fh5co-offcanvas li').removeClass('active');
 
-            // Add 'active' class to the clicked <li>
-            $(this).addClass('active');
-
             // Scroll to the element with the ID matching the class name
             if (className !== 'logout') {
+                // Add 'active' class to the clicked <li>
+                $(this).addClass('active');
                 $('html, body').animate({
                     scrollTop: $('#' + className).offset().top
                 }, 500, 'easeInOutExpo');
@@ -246,8 +251,8 @@
                     var sectionHeight = section.outerHeight();
 
                     if (scrollPosition >= sectionOffset - 50 && scrollPosition < sectionOffset + sectionHeight - 50) {
-                        $('.menu-1 li').removeClass('active');
-                        $(this).addClass('active');
+                        // $('.menu-1 li').removeClass('active');
+                        // $(this).addClass('active');
                     }
                 }
             });
@@ -261,12 +266,11 @@
                     var sectionHeight = section.outerHeight();
 
                     if (scrollPosition >= sectionOffset - 50 && scrollPosition < sectionOffset + sectionHeight - 50) {
-                        $('.fh5co-offcanvas ul li').removeClass('active');
-                        $(this).addClass('active');
+                        // $('.fh5co-offcanvas ul li').removeClass('active');
+                        // $(this).addClass('active');
                     }
                 }
             });
-
         });
 
 
@@ -342,8 +346,8 @@
             counterWayPoint();
             countdown();
             handleScroll();
-            activeTabWhenCLick();
             activeTabWhenScroll();
+            activeTabWhenCLick();
         }, 1000)
     });
 

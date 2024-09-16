@@ -1686,13 +1686,13 @@ form label {
 #fh5co-offcanvas {
     position: fixed;
     z-index: 1901;
-    width: 270px;
+    width: 243px;
     /*background: black;*/
     background: #7ebdc6;
-    top: 81px !important;
+    top: 0;
     right: 0;
     bottom: 0;
-    padding: 45px 40px 40px 40px;
+    padding: 82px 40px 40px 40px;
     overflow-y: auto;
     -moz-transform: translateX(270px);
     -webkit-transform: translateX(270px);
@@ -1729,6 +1729,7 @@ form label {
     padding: 0;
     margin: 0;
     list-style: none;
+    margin-bottom: 1em;
 }
 
 #fh5co-offcanvas ul li > ul {
