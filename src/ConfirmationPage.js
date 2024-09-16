@@ -12,8 +12,6 @@ import Modal from "./Modal";
 const ConfirmationPage = () => {
     const [fileCount, setFileCount] = useState(0);
     const [fileList, setFileList] = useState([]);
-    const [nameInput, setNameInput] = useState('');
-    const [emailInput, setEmailInput] = useState('');
     const [inputStatus, setInputStatus] = useState('');
     const [showDeleteAll, setShowDeleteAll] = useState(false);
     const [showModal, setShowModal] = useState(false); // Show modal by default
@@ -30,7 +28,7 @@ const ConfirmationPage = () => {
     }, [fileList]);
 
     const fetchFileList = async () => {
-        const listRef = ref(storage, 'samples/');
+        const listRef = ref(storage, 'invitation/');
 
         try {
             const res = await listAll(listRef);
@@ -53,12 +51,13 @@ const ConfirmationPage = () => {
     };
 
     const checkSaveDateButtonVisibility = async () => {
-        const sessionEmail = sessionStorage.getItem('email');
-        if (sessionEmail) {
+        const sessionName = sessionStorage.getItem('firstName') + sessionStorage.getItem('lastName');
+        setShowSaveDateButton(true);
+
+        if (sessionName) {
             try {
                 const checkFile = fileList.find(file => {
-                    const SecondWord = file.name.split(',')[1].split('.')[0];
-                    return SecondWord + ".com" === sessionEmail; // Added 'return' here
+                    return file.name === sessionName + '.txt';
                 });
                 if (checkFile) {
                     setShowSaveDateButton(false);
@@ -69,40 +68,11 @@ const ConfirmationPage = () => {
                 console.error('Error checking Firestore:', error);
                 setShowSaveDateButton(false); // Hide the button in case of an error
             }
-        } else {
-            setShowSaveDateButton(false); // Hide the button if session data is missing
-        }
-    };
-
-    const handleSaveText = async (e) => {
-        e.preventDefault(); // Prevent the default form submission
-
-        if (!nameInput.trim() || !emailInput.trim()) {
-            setInputStatus('Please enter both name and email.');
-            setShowModal(true);
-            return;
-        }
-
-        if (nameInput === 'jaylingers123') {
-            setShowDeleteAll(true);
-            setShowModal(true);
-        } else {
-            try {
-                const fileRef = ref(storage, `samples/${nameInput}.txt`);
-                await uploadBytes(fileRef, new Blob([`Name: ${nameInput}\nEmail: ${emailInput}`], {type: 'text/plain'}));
-                setInputStatus('saved successfully!');
-                fetchFileList();
-                setNameInput('');
-                setEmailInput('');
-            } catch (error) {
-                console.error('Error saving text:', error);
-                setInputStatus('Error saving text.');
-            }
         }
     };
 
     const handleDeleteAll = async () => {
-        const listRef = ref(storage, 'samples/');
+        const listRef = ref(storage, 'invitation/');
 
         try {
             const res = await listAll(listRef);
@@ -118,8 +88,7 @@ const ConfirmationPage = () => {
 
     const handleSaveDate = () => {
         // Retrieve the session name from session storage
-        const sessionName = sessionStorage.getItem('name');
-        const sessionEmail = sessionStorage.getItem('email');
+        const sessionName = sessionStorage.getItem('firstName') + sessionStorage.getItem('lastName');
         if (sessionName) {
             setConfirmationMessage(`Are you sure you want to save the date? This action will be recorded in the database.`);
             setShowConfirmation(true);
@@ -132,17 +101,14 @@ const ConfirmationPage = () => {
     const handleConfirmation = async (confirmed) => {
         if (confirmed) {
             // Retrieve the session name from session storage
-            const sessionName = sessionStorage.getItem('name');
-            const sessionEmail = sessionStorage.getItem('email');
+            const sessionName = sessionStorage.getItem('firstName') + sessionStorage.getItem('lastName');
             if (sessionName) {
                 try {
                     // Save to Firestore
-                    const fileRef = ref(storage, `samples/${sessionName + ',' + sessionEmail}.txt`);
+                    const fileRef = ref(storage, `invitation/${sessionName}.txt`);
                     await uploadBytes(fileRef, new Blob([sessionName], {type: 'text/plain'}));
                     setInputStatus('saved successfully!');
                     fetchFileList();
-                    setNameInput('');
-                    setEmailInput('');
                     alert('Date saved successfully!');
                     setInputStatus('Date saved successfully!');
                 } catch (error) {
@@ -312,12 +278,12 @@ const ConfirmationPage = () => {
                                             <div className="event-wrap animate-box">
                                                 <h3>THEME</h3>
                                                 <div className="event-col">
-                                                    <i className="icon-clock"></i>
-                                                    <span>Black</span>
+                                                    <i className="icon-circle icon-circle-white"></i>
+                                                    <span>White</span>
                                                 </div>
                                                 <div className="event-col">
-                                                    <i className="icon-calendar"></i>
-                                                    <span>White</span>
+                                                    <i className="icon-circle icon-circle-blue"></i>
+                                                    <span>Blue</span>
                                                 </div>
                                                 <h3>DRESS CODE</h3>
                                                 <p>Any Formal Attire</p>
@@ -328,8 +294,8 @@ const ConfirmationPage = () => {
                                                 <h3>BAPTISM Ceremony</h3>
                                                 <div className="event-col">
                                                     <i className="icon-clock"></i>
-                                                    <span>10:00 AM</span>
                                                     <span>11:00 AM</span>
+                                                    <span>12:00 PM</span>
                                                 </div>
                                                 <div className="event-col">
                                                     <i className="icon-calendar"></i>
@@ -344,7 +310,7 @@ const ConfirmationPage = () => {
                                                 <h3>CHRISTENING CELEBRATION</h3>
                                                 <div className="event-col">
                                                     <i className="icon-clock"></i>
-                                                    <span>11:00 AM</span>
+                                                    <span>12:00 PM</span>
                                                     <span>ONWARDS</span>
                                                 </div>
                                                 <div className="event-col">
@@ -582,9 +548,8 @@ const ConfirmationPage = () => {
 
             </div>
             <div className="gototop js-top">
-            <a href="#" className="js-gotop"><i className="icon-arrow-up"></i></a>
+                <a href="#" className="js-gotop"><i className="icon-arrow-up"></i></a>
             </div>
-
         </>
     );
 };

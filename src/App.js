@@ -5,45 +5,44 @@ import './ConfirmationPage.css';
 
 function App() {
     const [showModal, setShowModal] = useState(false);
-
     const [sessionLogin, setSessionLogin] = useState(false);
-
-    const [nameInput, setNameInput] = useState('');
-    const [emailInput, setEmailInput] = useState('');
+    const [firstName, setFirstName] = useState('');
+    const [lastName, setLastName] = useState('');
     const [inputStatus, setInputStatus] = useState('');
     const [showDeleteAll, setShowDeleteAll] = useState(false);
 
     useEffect(() => {
         const storedLoginStatus = sessionStorage.getItem('sessionLogin') === 'true';
-        const storedName = sessionStorage.getItem('name');
-        const storedEmail = sessionStorage.getItem('email');
+        const storedFirstName = sessionStorage.getItem('firstName');
+        const storedLastName = sessionStorage.getItem('lastName');
 
         if (storedLoginStatus) {
             setSessionLogin(true);
-            setNameInput(storedName || '');
-            setEmailInput(storedEmail || '');
+            setFirstName(storedFirstName || '');
+            setLastName(storedLastName || '');
         }
     }, []);
 
     useEffect(() => {
         sessionStorage.setItem('sessionLogin', sessionLogin);
         if (sessionLogin) {
-            sessionStorage.setItem('name', nameInput);
-            sessionStorage.setItem('email', emailInput);
+            sessionStorage.setItem('firstName', firstName);
+            sessionStorage.setItem('lastName', lastName);
         }
-    }, [sessionLogin, nameInput, emailInput]);
+    }, [sessionLogin, firstName, lastName]);
 
     const handleSaveText = (event) => {
+        event.preventDefault(); // Prevent default form submission
         setSessionLogin(true);
         window.location.reload();
     };
 
-    const handleNameChange = (event) => {
-        setNameInput(event.target.value);
+    const handleFirstNameChange = (event) => {
+        setFirstName(event.target.value);
     };
 
-    const handleEmailChange = (event) => {
-        setEmailInput(event.target.value);
+    const handleLastNameChange = (event) => {
+        setLastName(event.target.value);
     };
 
     const handleDeleteAll = () => {
@@ -68,34 +67,35 @@ function App() {
                                     <div className="row">
                                         <div className="col-md-8 col-md-offset-2 text-center fh5co-heading">
                                             <h2>Are You Attending?</h2>
-                                            <p>Please Fill-up the form to notify you that you're attending. Thanks.</p>
+                                            <p>Please fill up the form to notify us that you're attending. Thanks.</p>
                                         </div>
                                     </div>
-                                    <div className="row ">
+                                    <div className="row">
                                         <div className="col-md-10 col-md-offset-1">
                                             <div>
                                                 {inputStatus}
                                                 <form onSubmit={handleSaveText}>
                                                     <div className="form-group">
-                                                        <label htmlFor="name" className="sr-only">Name</label>
+                                                        <label htmlFor="firstName" className="sr-only">First
+                                                            Name</label>
                                                         <input
                                                             type="text"
                                                             className="form-control"
-                                                            id="name"
-                                                            value={nameInput}
-                                                            onChange={handleNameChange}
-                                                            placeholder="Lastname"
+                                                            id="firstName"
+                                                            value={firstName}
+                                                            onChange={handleFirstNameChange}
+                                                            placeholder="First Name"
                                                             required
                                                         />
                                                         <br/>
-                                                        <label htmlFor="email" className="sr-only">Email</label>
+                                                        <label htmlFor="lastName" className="sr-only">Last Name</label>
                                                         <input
-                                                            type="email"
+                                                            type="text"
                                                             className="form-control"
-                                                            id="email"
-                                                            value={emailInput}
-                                                            onChange={handleEmailChange}
-                                                            placeholder="Email"
+                                                            id="lastName"
+                                                            value={lastName}
+                                                            onChange={handleLastNameChange}
+                                                            placeholder="Last Name"
                                                             required
                                                         />
                                                     </div>
