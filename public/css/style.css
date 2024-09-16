@@ -436,7 +436,7 @@ h1, h2, h3, h4, h5, h6, figure {
 @media screen and (max-width: 768px) {
     .fh5co-cover .display-t,
     .fh5co-cover .display-tc {
-        height: 600px;
+        height: 660px;
     }
 }
 
@@ -1026,7 +1026,7 @@ form label {
     #fh5co-counter .display-tc h1,
     .fh5co-cover .display-tc h1 {
         font-size: 48px;
-        margin-top: 6em;
+        /*margin-top: 6em;*/
     }
 }
 
@@ -1043,6 +1043,7 @@ form label {
     #fh5co-counter .display-tc h2,
     .fh5co-cover .display-tc h2 {
         font-size: 16px;
+        margin-top: 14em;
     }
 }
 
