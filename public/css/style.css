@@ -2204,7 +2204,8 @@ form label {
     position: absolute;
     top: 0;
     z-index: 9;
-    background-image: url('https://www.aboutcatholics.com/wp-content/uploads/2020/08/mjn1lcou1cw-1024x683.jpg');
+    /*background-image: url('https://www.aboutcatholics.com/wp-content/uploads/2020/08/mjn1lcou1cw-1024x683.jpg');*/
+    background-image: url('/images/cover.jpg');
     opacity: 0.78;
     background-size: cover;
     background-position: top;
