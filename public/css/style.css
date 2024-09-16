@@ -2161,6 +2161,9 @@ form label {
 }
 
 @media screen and (max-width: 768px) {
+    .header-bg {
+        background-image: url('/images/cover.jpg') !important;
+    }
     /*# sourceMappingURL=style.css.map */
     .fh5co-nav-scrolled {
         background-color: rgba(0, 0, 0, 0.9); /* Change as needed */
@@ -2208,8 +2211,8 @@ form label {
     position: absolute;
     top: 0;
     z-index: 9;
-    /*background-image: url('https://www.aboutcatholics.com/wp-content/uploads/2020/08/mjn1lcou1cw-1024x683.jpg');*/
-    background-image: url('/images/cover.jpg');
+    background-image: url('https://www.aboutcatholics.com/wp-content/uploads/2020/08/mjn1lcou1cw-1024x683.jpg');
+    /*background-image: url('/images/cover.jpg');*/
     opacity: 0.78;
     background-size: cover;
     background-position: top;
