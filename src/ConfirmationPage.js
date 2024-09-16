@@ -9,6 +9,7 @@ const ConfirmationPage = () => {
     const [showDeleteAll, setShowDeleteAll] = useState(false);
     const [showModal, setShowModal] = useState(false); // Show modal by default
     const [showConfirmation, setShowConfirmation] = useState(false); // For confirmation modal
+    const [showList, setShowList] = useState(false); // Show list of registered
     const [confirmationMessage, setConfirmationMessage] = useState(''); // Confirmation message
     const [showSaveDateButton, setShowSaveDateButton] = useState(false); // Control button visibility
 
@@ -85,9 +86,6 @@ const ConfirmationPage = () => {
         if (sessionName) {
             setConfirmationMessage(`Are you sure you want to save the date? This action will be recorded in the database.`);
             setShowConfirmation(true);
-        } else {
-            setConfirmationMessage('No session name found.');
-            setShowConfirmation(true);
         }
     };
 
@@ -133,6 +131,8 @@ const ConfirmationPage = () => {
                                     </li>
                                     <li className={'wishes'}><i className={'icon-air-play'}/><a href="#">Wishes</a></li>
                                     <li className={'logout'}><i className={'icon-log-out'}/><a href="#">Logout</a></li>
+                                    <li className={'registered'}><i className={'icon-eye'}/><a href="#">Show
+                                        Registered Data</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -180,6 +180,56 @@ const ConfirmationPage = () => {
                             shoButton={true}
                         />
                     )}
+                    <div id={'registered'}>
+                        <Modal
+                            showModal={showModal}
+                            handleClose={() => setShowModal(false)}
+                            modalOverLay={' zoom-0-7'}
+                            showCloseButton={true}
+                        >
+                            <div className="modal-inner-content">
+                                <div id="fh5co-started">
+                                    <div style={{color: 'black !important'}}>
+                                        <div className="row">
+                                            <div className="col-md-8 col-md-offset-2 text-center fh5co-heading">
+                                                <h2>List of Registered</h2>
+                                            </div>
+                                        </div>
+                                        <div className="row">
+                                            <div className="col-md-10 col-md-offset-1">
+                                                <div>
+                                                    <div className="form-group">
+                                                        <table className="file-table">
+                                                            <thead>
+                                                            <tr>
+                                                                <th>ID</th>
+                                                                <th>File Name</th>
+                                                                <th>Last Modified</th>
+                                                            </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                            {fileList.map((file, index) => (
+                                                                <tr key={index}>
+                                                                    <td>{index + 1}</td>
+                                                                    <td>{file.name.replace('.txt', '')}</td>
+                                                                    <td>{file.lastModified ? file.lastModified.toLocaleString() : 'N/A'}</td>
+                                                                </tr>
+                                                            ))}
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                    <button onClick={handleDeleteAll} className="delete-all-button">
+                                                        Delete All
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </Modal>)
+                    </div>
+
                 </header>
                 <div className={'header-bg'}>
 

@@ -2242,6 +2242,12 @@ ul li i{
 ul li i{
     display: none;
 }
+#registered{
+    display: none;
+}
+.registered-show{
+    display: block !important;
+}
 @media screen and (max-width: 768px) {
     ul li i{
         display: block;

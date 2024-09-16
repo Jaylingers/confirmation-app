@@ -1,12 +1,15 @@
 import React, {useRef} from 'react';
 import './ConfirmationPage.css';
 
-const Modal = ({title, message, onConfirm, onCancel, children, shoButton, modalOverLay}) => {
+const Modal = ({title, message, onConfirm, onCancel, children, shoButton, modalOverLay, showCloseButton}) => {
     const modalRef = useRef();
 
     return (
         <div className={`modal-overlay ${modalOverLay}`}>
             <div className="modal-content" ref={modalRef}>
+                {showCloseButton &&
+                    <button className="close-button" onClick={() => modalRef.current.parentElement.classList.remove('show')}>X</button>
+                }
                 {children}
                 <h2>{title}</h2>
                 <p>{message}</p>

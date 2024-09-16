@@ -189,7 +189,7 @@
             // Get the class name from the clicked <li>
             var className = $(this).attr('class').split(' ')[0]; // Split to handle multiple classes if present
 
-            if (className !== 'logout') {
+            if (className !== 'logout' && className !== 'registered') {
                 // Remove 'active' class from all <li> elements
                 $('.menu-1 li').removeClass('active');
                 // Add 'active' class to the clicked <li>
@@ -198,7 +198,9 @@
                 $('html, body').animate({
                     scrollTop: $('#' + className).offset().top
                 }, 500, 'easeInOutExpo');
-            }  else {
+            } else if (className === 'registered') {
+                $('#registered').addClass('registered-show');
+            } else {
                 //add alert if user want to logout, yes or no
                 var r = confirm("Are you sure you want to logout?");
                 if (r === true) {
@@ -217,7 +219,7 @@
 
 
             // Scroll to the element with the ID matching the class name
-            if (className !== 'logout') {
+            if (className !== 'logout' && className !== 'registered') {
                 // Remove 'active' class from all <li> elements
                 $('.fh5co-offcanvas li').removeClass('active');
 
@@ -226,6 +228,8 @@
                 $('html, body').animate({
                     scrollTop: $('#' + className).offset().top
                 }, 500, 'easeInOutExpo');
+            } else if (className === 'registered') {
+                $('#registered').addClass('registered-show');
             } else {
                 //add alert if user want to logout, yes or no
                 var r = confirm("Are you sure you want to logout?");
@@ -330,6 +334,11 @@
         });
     };
 
+    const closeRegistered = () => {
+        $('.close-button').on('click', function () {
+            $('#registered').removeClass('registered-show');
+        });
+    }
 
     $(function () {
         setTimeout(function () {
@@ -348,6 +357,7 @@
             handleScroll();
             activeTabWhenScroll();
             activeTabWhenCLick();
+            closeRegistered();
         }, 1000)
     });
 
