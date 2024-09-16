@@ -189,10 +189,9 @@
             // Get the class name from the clicked <li>
             var className = $(this).attr('class').split(' ')[0]; // Split to handle multiple classes if present
 
-            // Remove 'active' class from all <li> elements
-            $('.menu-1 li').removeClass('active');
-
             if (className !== 'logout') {
+                // Remove 'active' class from all <li> elements
+                $('.menu-1 li').removeClass('active');
                 // Add 'active' class to the clicked <li>
                 $(this).addClass('active');
                 // Scroll to the element with the ID matching the class name
@@ -216,11 +215,12 @@
             // Get the class name from the clicked <li>
             var className = $(this).attr('class').split(' ')[0]; // Split to handle multiple classes if present
 
-            // Remove 'active' class from all <li> elements
-            $('.fh5co-offcanvas li').removeClass('active');
 
             // Scroll to the element with the ID matching the class name
             if (className !== 'logout') {
+                // Remove 'active' class from all <li> elements
+                $('.fh5co-offcanvas li').removeClass('active');
+
                 // Add 'active' class to the clicked <li>
                 $(this).addClass('active');
                 $('html, body').animate({
