@@ -1026,6 +1026,8 @@ form label {
     #fh5co-counter .display-tc h1,
     .fh5co-cover .display-tc h1 {
         font-size: 48px;
+        position: absolute;
+        top: 2em;
         /*margin-top: 6em;*/
     }
 }
