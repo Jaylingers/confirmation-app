@@ -354,7 +354,7 @@ const ConfirmationPage = () => {
                                     </li>
                                     <li className="one-third animate-box" data-animate-effect="fadeIn"
                                         style={{backgroundImage: "url(images/couple-1.jpg)"}}>
-                                        <a href="#" className="color-3">
+                                        <a href="images/gallery-1.jpg">
                                             <div className="case-studies-summary">
                                                 <span>0 Photos</span>
                                                 <h2>Family</h2>
@@ -363,28 +363,10 @@ const ConfirmationPage = () => {
                                     </li>
                                     <li className="one-third animate-box" data-animate-effect="fadeIn"
                                         style={{backgroundImage: "url(images/couple-1.jpg)"}}>
-                                        <a href="images/gallery-1.jpg">
-                                            <div className="case-studies-summary">
-                                                <span>0 Photos</span>
-                                                <h2>God Father</h2>
-                                            </div>
-                                        </a>
-                                    </li>
-                                    <li className="one-third animate-box" data-animate-effect="fadeIn"
-                                        style={{backgroundImage: "url(images/couple-1.jpg)"}}>
                                         <a href="#" className="color-2">
                                             <div className="case-studies-summary">
                                                 <span>0 Photos</span>
-                                                <h2>God Mother</h2>
-                                            </div>
-                                        </a>
-                                    </li>
-                                    <li className="one-third animate-box" data-animate-effect="fadeIn"
-                                        style={{backgroundImage: "url(images/couple-1.jpg)"}}>
-                                        <a href="#" className="color-4">
-                                            <div className="case-studies-summary">
-                                                <span>0 Photos</span>
-                                                <h2>Others</h2>
+                                                <h2>God Mother/God Father</h2>
                                             </div>
                                         </a>
                                     </li>
