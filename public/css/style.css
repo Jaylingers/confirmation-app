@@ -1163,6 +1163,7 @@ form label {
 
 .simply-countdown > .simply-section .simply-amount {
     font-size: 30px;
+    height: 45px;
     /* amounts */
 }
 
