@@ -193,7 +193,7 @@ const ConfirmationPage = () => {
                         <div className="row">
                             <div className="col-md-8 col-md-offset-2 text-center fh5co-heading animate-box">
                                 <h2 id={'when'}>Hello!</h2>
-                                <h3>September 29, 2024</h3>
+                                <h3>September 22, 2024</h3>
                                 <p>You are invited to celebrate your child's baptism.</p>
                             </div>
                         </div>
@@ -299,7 +299,7 @@ const ConfirmationPage = () => {
                                                 </div>
                                                 <div className="event-col">
                                                     <i className="icon-calendar"></i>
-                                                    <span>Sunday 29</span>
+                                                    <span>Sunday 22</span>
                                                     <span>September, 2024</span>
                                                 </div>
                                                 <p>Cordova Church</p>
@@ -315,7 +315,7 @@ const ConfirmationPage = () => {
                                                 </div>
                                                 <div className="event-col">
                                                     <i className="icon-calendar"></i>
-                                                    <span>Sunday 29</span>
+                                                    <span>Sunday 22</span>
                                                     <span>September, 2024</span>
                                                 </div>
                                                 <p>House</p>
