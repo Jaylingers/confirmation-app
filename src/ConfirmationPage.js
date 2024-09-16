@@ -1,12 +1,5 @@
-import React, {useState, useEffect} from 'react';
-import {
-    storage,
-    ref,
-    uploadBytes,
-    listAll,
-    getMetadata,
-    deleteObject
-} from './firebaseConfig';
+import React, {useEffect, useState} from 'react';
+import {deleteObject, getMetadata, listAll, ref, storage, uploadBytes} from './firebaseConfig';
 import Modal from "./Modal";
 
 const ConfirmationPage = () => {
@@ -131,13 +124,15 @@ const ConfirmationPage = () => {
                             </div>
                             <div className="col-xs-10 text-right menu-1">
                                 <ul>
-                                    <li className={'home active'}> <i className={'icon-home'} /> <a href="#">Home</a></li>
-                                    <li className={'when'}> <i className={'icon-message'} /><a href="#">Message</a></li>
-                                    <li className={'events'}> <i className={'icon-evernote'} /><a href="#">Events</a></li>
-                                    <li className={'gallery'}> <i className={'icon-image'} /><a href="#">Gallery</a>
+                                    <li className={'home active'}><i className={'icon-home'}/> <a href="#">Home</a></li>
+                                    <li className={'when'}><i className={'icon-message'}/><a href="#">Message</a></li>
+                                    <li className={'events'}><i className={'icon-evernote'}/><a href="#">Events</a></li>
+                                    <li className={'gallery'}><i className={'icon-image'}/><a href="#">Gallery</a>
                                     </li>
-                                    <li className={'guest'}> <i className={'icon-add-to-list'} /><a href="#">Guest</a></li>
-                                    <li className={'wishes'}> <i className={'icon-air-play'} /><a href="#">Wishes</a></li>
+                                    <li className={'guest'}><i className={'icon-add-to-list'}/><a href="#">Guest</a>
+                                    </li>
+                                    <li className={'wishes'}><i className={'icon-air-play'}/><a href="#">Wishes</a></li>
+                                    <li className={'logout'}><i className={'icon-log-out'}/><a href="#">Logout</a></li>
                                 </ul>
                             </div>
                         </div>

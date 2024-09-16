@@ -142,7 +142,7 @@
 
     var testimonialCarousel = function () {
         var owl = $('.owl-carousel-fullwidth');
-        if(owl) {
+        if (owl) {
             owl.owlCarousel({
                 items: 1,
                 loop: true,
@@ -195,10 +195,13 @@
             // Add 'active' class to the clicked <li>
             $(this).addClass('active');
 
-            // Scroll to the element with the ID matching the class name
-            $('html, body').animate({
-                scrollTop: $('#' + className).offset().top
-            }, 500, 'easeInOutExpo');
+            if (className !== 'logout') {
+                // Scroll to the element with the ID matching the class name
+                $('html, body').animate({
+                    scrollTop: $('#' + className).offset().top
+                }, 500, 'easeInOutExpo');
+            }
+
 
             return false;
         });
@@ -214,9 +217,18 @@
             $(this).addClass('active');
 
             // Scroll to the element with the ID matching the class name
-            $('html, body').animate({
-                scrollTop: $('#' + className).offset().top
-            }, 500, 'easeInOutExpo');
+            if (className !== 'logout') {
+                $('html, body').animate({
+                    scrollTop: $('#' + className).offset().top
+                }, 500, 'easeInOutExpo');
+            } else {
+                //add alert if user want to logout, yes or no
+                var r = confirm("Are you sure you want to logout?");
+                if (r === true) {
+                    sessionStorage.clear();
+                    window.location = '/';
+                }
+            }
 
             return false;
         });
