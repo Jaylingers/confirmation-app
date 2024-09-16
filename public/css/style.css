@@ -1054,7 +1054,7 @@ form label {
 .fh5co-cover .display-tc .btn {
     padding: 15px 20px;
     background: #fff !important;
-    color: #F14E95;
+    color: #7ebdc6;
     border: none !important;
     font-size: 14px;
     text-transform: uppercase;
@@ -1124,7 +1124,7 @@ form label {
     display: inline-block;
     width: 100px;
     height: 100px;
-    background: rgba(241, 78, 149, 0.8);
+    background: rgb(126 189 198);
     margin: 0 4px;
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
@@ -1256,7 +1256,7 @@ form label {
 
 .couple-half h3 {
     font-family: "Sacramento", Arial, serif;
-    color: #F14E95;
+    color: #7ebdc6;
     font-size: 30px;
 }
 
@@ -1389,7 +1389,7 @@ form label {
     margin-bottom: 10px;
     line-height: 1.5;
     font-weight: bold;
-    color: #F14E95;
+    color: #7ebdc6;
     font-family: "Sacramento", Arial, serif;
 }
 
@@ -1687,7 +1687,7 @@ form label {
     z-index: 1901;
     width: 270px;
     /*background: black;*/
-    background: #5f73bb;
+    background: #7ebdc6;
     top: 0;
     right: 0;
     top: 0;
