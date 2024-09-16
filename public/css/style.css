@@ -159,7 +159,7 @@ h1, h2, h3, h4, h5, h6, figure {
     width: 100%;
     padding: 40px 0;
     z-index: 1001;
-    background: #4b6d8a !important;
+    background: #7ebdc6 !important;
 }
 
 @media screen and (max-width: 768px) {
