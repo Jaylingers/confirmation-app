@@ -130,8 +130,8 @@ const ConfirmationPage = () => {
                                     </li>
                                     <li className={'wishes'}><i className={'icon-air-play'}/><a href="#">Wishes</a></li>
                                     <li className={'logout'}><i className={'icon-log-out'}/><a href="#">Logout</a></li>
-                                    <li className={'registered'}><i className={'icon-eye'}/><a href="#">Show
-                                        Registered Data</a></li>
+                                    <li className={'registered'}><i className={'icon-eye'}/><a href="#">Registered
+                                        Data</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -202,8 +202,8 @@ const ConfirmationPage = () => {
                                                             <thead>
                                                             <tr>
                                                                 <th>ID</th>
-                                                                <th>File Name</th>
-                                                                <th>Last Modified</th>
+                                                                <th>Name</th>
+                                                                <th>Date Added</th>
                                                             </tr>
                                                             </thead>
                                                             <tbody>
@@ -216,6 +216,7 @@ const ConfirmationPage = () => {
                                                             ))}
                                                             </tbody>
                                                         </table>
+                                                        <p>Confirmed: {fileCount}</p>
                                                     </div>
                                                     <button onClick={handleDeleteAll} className="delete-all-button">
                                                         Delete All
@@ -239,7 +240,7 @@ const ConfirmationPage = () => {
                             <div className="col-md-8 col-md-offset-2 text-center fh5co-heading animate-box">
                                 <h2 id={'when'}>Hello!</h2>
                                 <h3>September 22, 2024</h3>
-                                <p>You are invited to celebrate your child's baptism.</p>
+                                <p>You are invited to celebrate our child's baptism.</p>
                             </div>
                         </div>
                         <div className="couple-wrap animate-box">
@@ -551,6 +552,14 @@ const ConfirmationPage = () => {
                             </div>
                         </div>
                     </div>
+                </div>
+
+                <div className={'registered-footer'}>
+                    {!showSaveDateButton ? (<>
+                        <i className="icon-circle-check"></i> <p>registered</p>
+                    </>) : (<>
+                        <i className="icon-circle-cross"></i><p>not registered</p>
+                    </>)}
                 </div>
 
                 <footer id="fh5co-footer" role="contentinfo">

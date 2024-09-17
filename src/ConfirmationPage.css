@@ -101,7 +101,7 @@ button:hover {
     z-index: 9999;
 }
 .close-button:hover {
-    color: red;
+    background: #79a7ad !important;
 }
 .file-table {
     width: 100%;

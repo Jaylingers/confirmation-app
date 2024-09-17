@@ -230,6 +230,8 @@
                 }, 500, 'easeInOutExpo');
             } else if (className === 'registered') {
                 $('#registered').addClass('registered-show');
+                $('#page a').removeClass('active');
+                $('body').removeClass('offcanvas');
             } else {
                 //add alert if user want to logout, yes or no
                 var r = confirm("Are you sure you want to logout?");
