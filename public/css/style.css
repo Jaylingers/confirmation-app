@@ -2259,9 +2259,10 @@ ul li i{
     background-color: rgb(126, 189, 198);
     color: white;
     font-size: 9px;
+    box-shadow: 4px 14px 13px 10px rgba(0, 0, 0, 0.75);
 }
 .registered-footer p{
-    margin-bottom: 1px !important;
+    margin-bottom: 0px !important;
     margin-left: 2px;
 }
 .registered-footer .icon-circle-cross{
