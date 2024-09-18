@@ -2276,4 +2276,9 @@ ul li i{
         display: block;
         font-size: 1.5em;
     }
+    .simply-countdown {
+        /* The countdown */
+        margin-top: -2em !important;
+    }
+
 }
