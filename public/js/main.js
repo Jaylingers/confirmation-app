@@ -319,7 +319,7 @@
         simplyCountdown('.simply-countdown-one', {
             year: 2024,
             month: 9,
-            day: 22
+            day: 23
         });
     }
 

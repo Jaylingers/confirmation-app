@@ -66,17 +66,20 @@ const ConfirmationPage = () => {
 
     const handleDeleteAll = async () => {
         const listRef = ref(storage, 'invitation/');
-
-        try {
-            const res = await listAll(listRef);
-            const deletePromises = res.items.map(itemRef => deleteObject(itemRef));
-            await Promise.all(deletePromises);
-            fetchFileList();
-            setShowDeleteAll(false);
-            setShowModal(true);
-        } catch (error) {
-            console.error('Error deleting files:', error);
+        var r = window.confirm("Are you sure you want to continue?");
+        if (r === true) {
+            try {
+                const res = await listAll(listRef);
+                const deletePromises = res.items.map(itemRef => deleteObject(itemRef));
+                await Promise.all(deletePromises);
+                fetchFileList();
+                setShowDeleteAll(false);
+                setShowModal(true);
+            } catch (error) {
+                console.error('Error deleting files:', error);
+            }
         }
+
     };
 
     const handleSaveDate = () => {
@@ -229,7 +232,7 @@ const ConfirmationPage = () => {
                             </div>
                         </Modal>)
                     </div>
-
+                    jay
                 </header>
                 <div className={'header-bg'}>
 
@@ -558,7 +561,7 @@ const ConfirmationPage = () => {
                     {!showSaveDateButton ? (<>
                         <i className="icon-circle-check"></i> <p>registered</p>
                     </>) : (<>
-                        <i className="icon-circle-cross"></i><p>not registered</p>
+                        <i className="icon-circle-cross"></i><p>unregistered</p>
                     </>)}
                 </div>
 

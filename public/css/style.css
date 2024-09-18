@@ -47,12 +47,13 @@
 body.modal-open {
     overflow: hidden;
 }
-
+.btn-confirm:hover {
+    background-color: #658f95;
+}
 
 .btn-cancel {
     background-color: #f44336;
     color: white;
-    padding: 10px 20px;
     cursor: pointer;
     border: none;
     border-radius: 5px;
@@ -61,7 +62,6 @@ body.modal-open {
 .btn-cancel:hover {
     background-color: #d5483e;
     color: white;
-    padding: 10px 20px;
     cursor: pointer;
     border: none;
     border-radius: 5px;
