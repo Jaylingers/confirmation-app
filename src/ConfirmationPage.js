@@ -232,7 +232,6 @@ const ConfirmationPage = () => {
                             </div>
                         </Modal>)
                     </div>
-                    jay
                 </header>
                 <div className={'header-bg'}>
 
