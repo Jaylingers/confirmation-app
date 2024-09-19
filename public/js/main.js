@@ -351,10 +351,6 @@
 
     $(function () {
         setTimeout(function () {
-            activeTabWhenScroll();
-            activeTabWhenCLick();
-            closeRegistered();
-            checkAdmin();
             parallax();
             offcanvasMenu();
             burgerMenu();
@@ -367,6 +363,10 @@
             counterWayPoint();
             countdown();
             handleScroll();
+            activeTabWhenScroll();
+            activeTabWhenCLick();
+            closeRegistered();
+            checkAdmin();
         }, 1000)
     });
 
