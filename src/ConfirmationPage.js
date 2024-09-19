@@ -200,7 +200,7 @@ const ConfirmationPage = () => {
                                         <div className="row">
                                             <div className="col-md-10 col-md-offset-1">
                                                 <div>
-                                                    <div className="form-group">
+                                                    <div className="form-group form-group-list">
                                                         <table className="file-table">
                                                             <thead>
                                                             <tr>
