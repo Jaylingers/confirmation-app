@@ -370,74 +370,102 @@ const ConfirmationPage = () => {
                 </div>
 
 
-
-                <div id="fh5co-testimonial">
+                <div id="fh5co-gallery" className="fh5co-section-gray">
                     <div className="container">
                         <div className="row">
-                            <div className="row animate-box">
-                                <div className="col-md-8 col-md-offset-2 text-center fh5co-heading">
-                                    <span>Best Wishes</span>
-                                    <h2 id={'wishes'}>Friends Wishes</h2>
-                                </div>
+                            <div className="col-md-8 col-md-offset-2 text-center fh5co-heading animate-box">
+                                <span>Our Memories</span>
+                                <h2 id={'gallery'}>Baptism Gallery</h2>
+                                <p>Far far away, behind the word mountains, far from the countries Vokalia and
+                                    Consonantia, there live the blind texts.</p>
                             </div>
-                            <div className="row">
-                                <div className="col-md-12 animate-box">
-                                    <div className="wrap-testimony">
-                                        <div className="owl-carousel-fullwidth">
-                                            <div className="item">
-                                                <div className="testimony-slide active text-center">
-                                                    <figure>
-                                                        <img src="images/couple-1.jpg" alt="user"/>
-                                                    </figure>
-                                                    <span></span>
-                                                    <blockquote>
-                                                        <p>Thank you for joining us in celebrating David Tyler’s
-                                                            christening and for being such a meaningful part of
-                                                            our
-                                                            journey. Your friendship and love make this day even
-                                                            more
-                                                            special.
+                        </div>
+                        <div className="row row-bottom-padded-md">
+                            <div className="col-md-12">
+                                <ul id="fh5co-gallery-list">
 
-                                                            With warmest regards and heartfelt thanks.</p>
-                                                    </blockquote>
-                                                </div>
+                                    <li className="one-third animate-box" data-animate-effect="fadeIn"
+                                        style={{backgroundImage: "url(images/couple-1.jpg)"}}>
+                                        <a href="images/gallery-1.jpg">
+                                            <div className="case-studies-summary">
+                                                <span>0 Photos</span>
+                                                <h2>David Tyler</h2>
                                             </div>
-                                            <div className="item">
-                                                <div className="testimony-slide text-center">
-                                                    <figure>
-                                                        <img src="images/couple-1.jpg" alt="user"/>
-                                                    </figure>
-                                                    <span></span>
-                                                    <blockquote>
-                                                        <p>Thank you for joining us in celebrating David Tyler’s
-                                                            christening and for being such a meaningful part of
-                                                            our
-                                                            journey. Your friendship and love make this day even
-                                                            more
-                                                            special.
+                                        </a>
+                                    </li>
+                                    <li className="one-third animate-box" data-animate-effect="fadeIn"
+                                        style={{backgroundImage: "url(images/couple-1.jpg)"}}>
+                                        <a href="images/gallery-1.jpg">
+                                            <div className="case-studies-summary">
+                                                <span>0 Photos</span>
+                                                <h2>Family</h2>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li className="one-third animate-box" data-animate-effect="fadeIn"
+                                        style={{backgroundImage: "url(images/couple-1.jpg)"}}>
+                                        <a href="#" className="color-2">
+                                            <div className="case-studies-summary">
+                                                <span>0 Photos</span>
+                                                <h2>God Mother/God Father</h2>
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-                                                            With warmest regards and heartfelt thanks.</p>
-                                                    </blockquote>
-                                                </div>
-                                            </div>
-                                            <div className="item">
-                                                <div className="testimony-slide text-center">
-                                                    <figure>
-                                                        <img src="images/couple-1.jpg" alt="user"/>
-                                                    </figure>
-                                                    <span></span>
-                                                    <blockquote>
-                                                        <p>Thank you for joining us in celebrating David Tyler’s
-                                                            christening and for being such a meaningful part of
-                                                            our
-                                                            journey. Your friendship and love make this day even
-                                                            more
-                                                            special.
+                <div id="fh5co-counter" className="fh5co-bg fh5co-counter"
+                     style={{backgroundImage: "url(images/couple-1.jpg)"}}>
+                    <div className="overlay" id={'guest'}></div>
+                    <div className="container">
+                        <div className="row">
+                            <div className="display-t">
+                                <div className="display-tc">
+                                    <div className="col-md-3 col-sm-6 animate-box">
+                                        <div className="feature-center">
+								<span className="icon">
+									<i className="icon-users"></i>
+								</span>
+                                            <span className="counter js-counter" data-from="0" data-to={fileCount}
+                                                  data-speed="5000" data-refresh-interval="50"></span>
+                                            <span className="counter-label">Guest</span>
 
-                                                            With warmest regards and heartfelt thanks.</p>
-                                                    </blockquote>
-                                                </div>
-                                            </div>
+                                        </div>
+                                    </div>
+                                    <div className="col-md-3 col-sm-6 animate-box">
+                                        <div className="feature-center">
+								<span className="icon">
+									<i className="icon-user"></i>
+								</span>
+
+                                            <span className="counter js-counter" data-from="0" data-to="0"
+                                                  data-speed="10000" data-refresh-interval="50">1</span>
+                                            <span className="counter-label">We Catter</span>
+                                        </div>
+                                    </div>
+                                    <div className="col-md-3 col-sm-6 animate-box">
+                                        <div className="feature-center">
+								<span className="icon">
+									<i className="icon-calendar"></i>
+								</span>
+                                            <span className="counter js-counter" data-from="0" data-to="0"
+                                                  data-speed="10000" data-refresh-interval="50">1</span>
+                                            <span className="counter-label">Events Done</span>
+                                        </div>
+                                    </div>
+                                    <div className="col-md-3 col-sm-6 animate-box">
+                                        <div className="feature-center">
+								<span className="icon">
+									<i className="icon-clock"></i>
+								</span>
+
+                                            <span className="counter js-counter" data-from="0" data-to="0"
+                                                  data-speed="10000" data-refresh-interval="50">1</span>
+                                            <span className="counter-label">Hours Spent</span>
+
                                         </div>
                                     </div>
                                 </div>
@@ -445,6 +473,7 @@ const ConfirmationPage = () => {
                         </div>
                     </div>
                 </div>
+
 
                 <div className={'registered-footer'}>
                     {!showSaveDateButton ? (<>
