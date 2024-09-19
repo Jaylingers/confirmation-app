@@ -219,8 +219,8 @@ const ConfirmationPage = () => {
                                                             ))}
                                                             </tbody>
                                                         </table>
-                                                        <p>Confirmed: {fileCount}</p>
                                                     </div>
+                                                    <p>Confirmed: {fileCount}</p>
                                                     <button onClick={handleDeleteAll} className="delete-all-button">
                                                         Delete All
                                                     </button>

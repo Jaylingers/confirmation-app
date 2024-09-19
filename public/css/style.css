@@ -2282,3 +2282,7 @@ ul li i{
     }
 
 }
+.form-group{
+    height: 25em;
+    overflow: scroll;
+}
