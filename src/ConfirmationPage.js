@@ -549,13 +549,13 @@ const ConfirmationPage = () => {
                     </div>
                 </div>
 
-                <div className={'registered-footer'}>
-                    {!showSaveDateButton ? (<>
-                        <i className="icon-circle-check"></i> <p>registered</p>
-                    </>) : (<>
-                        <i className="icon-circle-cross"></i><p>unregistered</p>
-                    </>)}
-                </div>
+                {/*<div className={'registered-footer'}>*/}
+                {/*    {!showSaveDateButton ? (<>*/}
+                {/*        <i className="icon-circle-check"></i> <p>registered</p>*/}
+                {/*    </>) : (<>*/}
+                {/*        <i className="icon-circle-cross"></i><p>unregistered</p>*/}
+                {/*    </>)}*/}
+                {/*</div>*/}
 
                 <footer id="fh5co-footer" role="contentinfo">
                     <div className="container">
