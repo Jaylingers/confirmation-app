@@ -302,6 +302,74 @@ const ConfirmationPage = () => {
                     </div>
                 </div>
 
+                <div id="fh5co-event" className="fh5co-bg" style={{backgroundImage: "url(images/img_bg_3.jpg)"}}>
+                    <div className="overlay"></div>
+                    <div className="container">
+                        <div className="row">
+                            <div className="col-md-8 col-md-offset-2 text-center fh5co-heading animate-box">
+                                <span id={'events'}>Our Special Events</span>
+                                <h2>Baptism Events</h2>
+                            </div>
+                        </div>
+                        <div className="row">
+                            <div className="display-t">
+                                <div className="display-tc">
+                                    <div className="col-md-10 col-md-offset-1">
+                                        <div className="col-md-4 col-sm-4 text-center">
+                                            <div className="event-wrap animate-box">
+                                                <h3>THEME</h3>
+                                                <div className="event-col">
+                                                    <i className="icon-circle icon-circle-white"></i>
+                                                    <span>White</span>
+                                                </div>
+                                                <div className="event-col">
+                                                    <i className="icon-circle icon-circle-blue"></i>
+                                                    <span>Blue</span>
+                                                </div>
+                                                <h3>DRESS CODE</h3>
+                                                <p>Any Formal Attire</p>
+                                            </div>
+                                        </div>
+                                        <div className="col-md-4 col-sm-4 text-center">
+                                            <div className="event-wrap animate-box">
+                                                <h3>BAPTISM Ceremony</h3>
+                                                <div className="event-col">
+                                                    <i className="icon-clock"></i>
+                                                    <span>11:00 AM</span>
+                                                    <span>12:00 PM</span>
+                                                </div>
+                                                <div className="event-col">
+                                                    <i className="icon-calendar"></i>
+                                                    <span>Sunday 22</span>
+                                                    <span>September, 2024</span>
+                                                </div>
+                                                <p>Cordova Church</p>
+                                            </div>
+                                        </div>
+                                        <div className="col-md-4 col-sm-4 text-center">
+                                            <div className="event-wrap animate-box">
+                                                <h3>CHRISTENING CELEBRATION</h3>
+                                                <div className="event-col">
+                                                    <i className="icon-clock"></i>
+                                                    <span>12:00 PM</span>
+                                                    <span>ONWARDS</span>
+                                                </div>
+                                                <div className="event-col">
+                                                    <i className="icon-calendar"></i>
+                                                    <span>Sunday 22</span>
+                                                    <span>September, 2024</span>
+                                                </div>
+                                                <p>House</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
 
                 <div className={'registered-footer'}>
                     {!showSaveDateButton ? (<>
