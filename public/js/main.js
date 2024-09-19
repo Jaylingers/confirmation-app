@@ -363,8 +363,8 @@
             counterWayPoint();
             countdown();
             handleScroll();
-            activeTabWhenScroll();
-            activeTabWhenCLick();
+            // activeTabWhenScroll();
+            // activeTabWhenCLick();
             closeRegistered();
             checkAdmin();
         }, 1000)
