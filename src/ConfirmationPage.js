@@ -142,14 +142,7 @@ const ConfirmationPage = () => {
                     </div>
                 </nav>
 
-                <header id="fh5co-header" className="fh5co-cover" role="banner"
-                        style={{
-                            // backgroundImage: 'url(images/img_bg_2.jpg)',
-                            // backgroundColor:'antiquewhite'
-                            // backgroundColor: '#ebd2af'
-                            zIndex: 999,
-                        }}
-
+                <header id="fh5co-header" className="fh5co-cover" role="banner" style={{zIndex: 999,}}
                         data-stellar-background-ratio="0.5">
                     <div className="overlay" id={'home'}></div>
                     <div className="container">
@@ -239,7 +232,7 @@ const ConfirmationPage = () => {
                 <div id="fh5co-couple">
                     <div className="container">
                         <div className="row">
-                            <div className="col-md-8 col-md-offset-2 text-center fh5co-heading animate-box">
+                            <div className="col-md-8 col-md-offset-2 text-center fh5co-heading event-wrap animate-box">
                                 <h2 id={'when'}>Hello!</h2>
                                 <h3>September 22, 2024</h3>
                                 <p>You are invited to celebrate our child's baptism.</p>
