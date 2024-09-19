@@ -257,8 +257,8 @@
                     var sectionHeight = section.outerHeight();
 
                     if (scrollPosition >= sectionOffset - 50 && scrollPosition < sectionOffset + sectionHeight - 50) {
-                        // $('.menu-1 li').removeClass('active');
-                        // $(this).addClass('active');
+                        $('.menu-1 li').removeClass('active');
+                        $(this).addClass('active');
                     }
                 }
             });
@@ -272,8 +272,8 @@
                     var sectionHeight = section.outerHeight();
 
                     if (scrollPosition >= sectionOffset - 50 && scrollPosition < sectionOffset + sectionHeight - 50) {
-                        // $('.fh5co-offcanvas ul li').removeClass('active');
-                        // $(this).addClass('active');
+                        $('.fh5co-offcanvas ul li').removeClass('active');
+                        $(this).addClass('active');
                     }
                 }
             });
