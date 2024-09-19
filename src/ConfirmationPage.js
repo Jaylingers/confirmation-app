@@ -474,34 +474,82 @@ const ConfirmationPage = () => {
                     </div>
                 </div>
 
-
-                <div className={'registered-footer'}>
-                    {!showSaveDateButton ? (<>
-                        <i className="icon-circle-check"></i> <p>registered</p>
-                    </>) : (<>
-                        <i className="icon-circle-cross"></i><p>unregistered</p>
-                    </>)}
-                </div>
-
-                <footer id="fh5co-footer" role="contentinfo">
+                <div id="fh5co-testimonial">
                     <div className="container">
+                        <div className="row">
+                            <div className="row animate-box">
+                                <div className="col-md-8 col-md-offset-2 text-center fh5co-heading">
+                                    <span>Best Wishes</span>
+                                    <h2 id={'wishes'}>Friends Wishes</h2>
+                                </div>
+                            </div>
+                            <div className="row">
+                                <div className="col-md-12 animate-box">
+                                    <div className="wrap-testimony">
+                                        <div className="owl-carousel-fullwidth">
+                                            <div className="item">
+                                                <div className="testimony-slide active text-center">
+                                                    <figure>
+                                                        <img src="images/couple-1.jpg" alt="user"/>
+                                                    </figure>
+                                                    <span></span>
+                                                    <blockquote>
+                                                        <p>Thank you for joining us in celebrating David Tyler’s
+                                                            christening and for being such a meaningful part of
+                                                            our
+                                                            journey. Your friendship and love make this day even
+                                                            more
+                                                            special.
 
-                        <div className="row copyright">
-                            <div className="col-md-12 text-center">
-                                <p>
-                                    <small className="block">&copy; 2024. All Rights Reserved.</small>
-                                </p>
-                                <ul className="fh5co-social-icons">
-                                    <li><a href="#"><i className="icon-twitter"></i></a></li>
-                                    <li><a href="#"><i className="icon-facebook"></i></a></li>
-                                    <li><a href="#"><i className="icon-linkedin"></i></a></li>
-                                    <li><a href="#"><i className="icon-dribbble"></i></a></li>
-                                </ul>
+                                                            With warmest regards and heartfelt thanks.</p>
+                                                    </blockquote>
+                                                </div>
+                                            </div>
+                                            <div className="item">
+                                                <div className="testimony-slide text-center">
+                                                    <figure>
+                                                        <img src="images/couple-1.jpg" alt="user"/>
+                                                    </figure>
+                                                    <span></span>
+                                                    <blockquote>
+                                                        <p>Thank you for joining us in celebrating David Tyler’s
+                                                            christening and for being such a meaningful part of
+                                                            our
+                                                            journey. Your friendship and love make this day even
+                                                            more
+                                                            special.
+
+                                                            With warmest regards and heartfelt thanks.</p>
+                                                    </blockquote>
+                                                </div>
+                                            </div>
+                                            <div className="item">
+                                                <div className="testimony-slide text-center">
+                                                    <figure>
+                                                        <img src="images/couple-1.jpg" alt="user"/>
+                                                    </figure>
+                                                    <span></span>
+                                                    <blockquote>
+                                                        <p>Thank you for joining us in celebrating David Tyler’s
+                                                            christening and for being such a meaningful part of
+                                                            our
+                                                            journey. Your friendship and love make this day even
+                                                            more
+                                                            special.
+
+                                                            With warmest regards and heartfelt thanks.</p>
+                                                    </blockquote>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-
                     </div>
-                </footer>
+                </div>
+
+            
 
             </div>
             <div className="gototop js-top">
