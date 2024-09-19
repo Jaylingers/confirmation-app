@@ -2281,11 +2281,11 @@ ul li i{
         margin-top: -2em !important;
     }
     .modal-content {
-        height: 43em !important;
+        /*height: 43em !important;*/
     }
 
 }
 .form-group-list{
-    height: 25em;
+    height: 20em;
     overflow: scroll;
 }
