@@ -181,6 +181,7 @@ const ConfirmationPage = () => {
                             handleClose={() => setShowModal(false)}
                             modalOverLay={' zoom-0-7'}
                             showCloseButton={true}
+                            showRegisteredList={true}
                         >
                             <div className="modal-inner-content">
                                 <div id="fh5co-started">
