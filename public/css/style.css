@@ -2280,9 +2280,12 @@ ul li i{
         /* The countdown */
         margin-top: -2em !important;
     }
+    .modal-content {
+        height: 43em !important;
+    }
 
 }
 .form-group-list{
-    height: 20em;
+    height: 25em;
     overflow: scroll;
 }
