@@ -125,7 +125,7 @@ const ConfirmationPage = () => {
                             <div className="col-xs-10 text-right menu-1">
                                 <ul>
                                     <li className={'home active'}><i className={'icon-home'}/> <a href="#">Home</a></li>
-                                    <li className={'when'}><i className={'icon-message'}/><a href="#">Message</a></li>
+                                    <li className={'when'}><i className={'icon-message'}/><a href="#">Parent's Message</a></li>
                                     <li className={'events'}><i className={'icon-evernote'}/><a href="#">Events</a></li>
                                     <li className={'gallery'}><i className={'icon-image'}/><a href="#">Gallery</a>
                                     </li>
