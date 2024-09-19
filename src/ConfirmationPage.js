@@ -549,12 +549,38 @@ const ConfirmationPage = () => {
                     </div>
                 </div>
 
-            
+                <div className={'registered-footer'}>
+                    {!showSaveDateButton ? (<>
+                        <i className="icon-circle-check"></i> <p>registered</p>
+                    </>) : (<>
+                        <i className="icon-circle-cross"></i><p>unregistered</p>
+                    </>)}
+                </div>
+
+                <footer id="fh5co-footer" role="contentinfo">
+                    <div className="container">
+
+                        <div className="row copyright">
+                            <div className="col-md-12 text-center">
+                                <p>
+                                    <small className="block">&copy; 2024. All Rights Reserved.</small>
+                                </p>
+                                <ul className="fh5co-social-icons">
+                                    <li><a href="#"><i className="icon-twitter"></i></a></li>
+                                    <li><a href="#"><i className="icon-facebook"></i></a></li>
+                                    <li><a href="#"><i className="icon-linkedin"></i></a></li>
+                                    <li><a href="#"><i className="icon-dribbble"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+
+                    </div>
+                </footer>
 
             </div>
-            <div className="gototop js-top">
-                <a href="#" className="js-gotop"><i className="icon-arrow-up"></i></a>
-            </div>
+            {/*<div className="gototop js-top">*/}
+            {/*    <a href="#" className="js-gotop"><i className="icon-arrow-up"></i></a>*/}
+            {/*</div>*/}
         </>
     );
 };
