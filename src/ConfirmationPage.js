@@ -132,9 +132,9 @@ const ConfirmationPage = () => {
                                     <li className={'guest'}><i className={'icon-add-to-list'}/><a href="#">Guest</a>
                                     </li>
                                     <li className={'wishes'}><i className={'icon-air-play'}/><a href="#">Wishes</a></li>
-                                    <li className={'logout'}><i className={'icon-log-out'}/><a href="#">Logout</a></li>
                                     <li className={'registered'}><i className={'icon-eye'}/><a href="#">Registered
-                                        Data</a></li>
+                                        List</a></li>
+                                    <li className={'logout'}><i className={'icon-log-out'}/><a href="#">Logout</a></li>
                                 </ul>
                             </div>
                         </div>
