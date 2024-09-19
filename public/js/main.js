@@ -364,7 +364,7 @@
             countdown();
             handleScroll();
             // activeTabWhenScroll();
-            // activeTabWhenCLick();
+            activeTabWhenCLick();
             closeRegistered();
             checkAdmin();
         }, 1000)
