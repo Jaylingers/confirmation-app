@@ -302,6 +302,181 @@ const ConfirmationPage = () => {
                     </div>
                 </div>
 
+                <div id="fh5co-event" className="fh5co-bg" style={{backgroundImage: "url(images/img_bg_3.jpg)"}}>
+                    <div className="overlay"></div>
+                    <div className="container">
+                        <div className="row">
+                            <div className="col-md-8 col-md-offset-2 text-center fh5co-heading animate-box">
+                                <span id={'events'}>Our Special Events</span>
+                                <h2>Baptism Events</h2>
+                            </div>
+                        </div>
+                        <div className="row">
+                            <div className="display-t">
+                                <div className="display-tc">
+                                    <div className="col-md-10 col-md-offset-1">
+                                        <div className="col-md-4 col-sm-4 text-center">
+                                            <div className="event-wrap animate-box">
+                                                <h3>THEME</h3>
+                                                <div className="event-col">
+                                                    <i className="icon-circle icon-circle-white"></i>
+                                                    <span>White</span>
+                                                </div>
+                                                <div className="event-col">
+                                                    <i className="icon-circle icon-circle-blue"></i>
+                                                    <span>Blue</span>
+                                                </div>
+                                                <h3>DRESS CODE</h3>
+                                                <p>Any Formal Attire</p>
+                                            </div>
+                                        </div>
+                                        <div className="col-md-4 col-sm-4 text-center">
+                                            <div className="event-wrap animate-box">
+                                                <h3>BAPTISM Ceremony</h3>
+                                                <div className="event-col">
+                                                    <i className="icon-clock"></i>
+                                                    <span>11:00 AM</span>
+                                                    <span>12:00 PM</span>
+                                                </div>
+                                                <div className="event-col">
+                                                    <i className="icon-calendar"></i>
+                                                    <span>Sunday 22</span>
+                                                    <span>September, 2024</span>
+                                                </div>
+                                                <p>Cordova Church</p>
+                                            </div>
+                                        </div>
+                                        <div className="col-md-4 col-sm-4 text-center">
+                                            <div className="event-wrap animate-box">
+                                                <h3>CHRISTENING CELEBRATION</h3>
+                                                <div className="event-col">
+                                                    <i className="icon-clock"></i>
+                                                    <span>12:00 PM</span>
+                                                    <span>ONWARDS</span>
+                                                </div>
+                                                <div className="event-col">
+                                                    <i className="icon-calendar"></i>
+                                                    <span>Sunday 22</span>
+                                                    <span>September, 2024</span>
+                                                </div>
+                                                <p>House</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div id="fh5co-testimonial">
+                    <div className="container">
+                        <div className="row">
+                            <div className="row animate-box">
+                                <div className="col-md-8 col-md-offset-2 text-center fh5co-heading">
+                                    <span>Best Wishes</span>
+                                    <h2 id={'wishes'}>Friends Wishes</h2>
+                                </div>
+                            </div>
+                            <div className="row">
+                                <div className="col-md-12 animate-box">
+                                    <div className="wrap-testimony">
+                                        <div className="owl-carousel-fullwidth">
+                                            <div className="item">
+                                                <div className="testimony-slide active text-center">
+                                                    <figure>
+                                                        <img src="images/couple-1.jpg" alt="user"/>
+                                                    </figure>
+                                                    <span></span>
+                                                    <blockquote>
+                                                        <p>Thank you for joining us in celebrating David Tyler’s
+                                                            christening and for being such a meaningful part of
+                                                            our
+                                                            journey. Your friendship and love make this day even
+                                                            more
+                                                            special.
+
+                                                            With warmest regards and heartfelt thanks.</p>
+                                                    </blockquote>
+                                                </div>
+                                            </div>
+                                            <div className="item">
+                                                <div className="testimony-slide text-center">
+                                                    <figure>
+                                                        <img src="images/couple-1.jpg" alt="user"/>
+                                                    </figure>
+                                                    <span></span>
+                                                    <blockquote>
+                                                        <p>Thank you for joining us in celebrating David Tyler’s
+                                                            christening and for being such a meaningful part of
+                                                            our
+                                                            journey. Your friendship and love make this day even
+                                                            more
+                                                            special.
+
+                                                            With warmest regards and heartfelt thanks.</p>
+                                                    </blockquote>
+                                                </div>
+                                            </div>
+                                            <div className="item">
+                                                <div className="testimony-slide text-center">
+                                                    <figure>
+                                                        <img src="images/couple-1.jpg" alt="user"/>
+                                                    </figure>
+                                                    <span></span>
+                                                    <blockquote>
+                                                        <p>Thank you for joining us in celebrating David Tyler’s
+                                                            christening and for being such a meaningful part of
+                                                            our
+                                                            journey. Your friendship and love make this day even
+                                                            more
+                                                            special.
+
+                                                            With warmest regards and heartfelt thanks.</p>
+                                                    </blockquote>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div className={'registered-footer'}>
+                    {!showSaveDateButton ? (<>
+                        <i className="icon-circle-check"></i> <p>registered</p>
+                    </>) : (<>
+                        <i className="icon-circle-cross"></i><p>unregistered</p>
+                    </>)}
+                </div>
+
+                <footer id="fh5co-footer" role="contentinfo">
+                    <div className="container">
+
+                        <div className="row copyright">
+                            <div className="col-md-12 text-center">
+                                <p>
+                                    <small className="block">&copy; 2024. All Rights Reserved.</small>
+                                </p>
+                                <ul className="fh5co-social-icons">
+                                    <li><a href="#"><i className="icon-twitter"></i></a></li>
+                                    <li><a href="#"><i className="icon-facebook"></i></a></li>
+                                    <li><a href="#"><i className="icon-linkedin"></i></a></li>
+                                    <li><a href="#"><i className="icon-dribbble"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+
+                    </div>
+                </footer>
+
+            </div>
+            <div className="gototop js-top">
+                <a href="#" className="js-gotop"><i className="icon-arrow-up"></i></a>
             </div>
         </>
     );
